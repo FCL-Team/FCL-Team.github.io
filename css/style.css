@@ -1,0 +1,74 @@
+.banner {
+    font-size: large;
+    padding-top: 96px;
+    padding-bottom: 64px;
+    text-align: center
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.download {
+    background-color: rgba(94, 188, 255, 0.177);
+    font-size: large;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 48px;
+    padding-right: 48px;
+    text-align: center
+}
+
+.textbox {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 48px;
+    padding-right: 48px;
+    text-align: left
+}
+
+.card {
+    font-size: large;
+    margin-top: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 48px;
+    padding-right: 48px;
+    text-align: left
+}
+
+.card a:link {
+    color:#000000;
+    text-decoration:none;
+}
+
+.card a:visited {
+    color:#000000;
+    text-decoration:none;
+}
+
+.card a:hover {
+    color:#000000;
+    text-decoration:none;
+}
+
+.card a:active {
+    color:#000000;
+    text-decoration:none;
+}
+
+.docs {
+    font-size: large;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.docs img {
+    width: 100%;
+    height: auto;
+}
