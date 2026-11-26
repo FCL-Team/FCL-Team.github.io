@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fcl-team.github.io/sitemap.xml
+Sitemap: https://fcl-team.github.io/en/sitemap.xml

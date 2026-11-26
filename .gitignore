@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# Production build
+build/
+.docusaurus/
+
+# Generated / local
+.env
+.env.local
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db

@@ -1,0 +1,1065 @@
+{
+  "about.foundation.visit": {
+    "message": "Visit project",
+    "description": "Foundation card action"
+  },
+  "about.meta.title": {
+    "message": "About",
+    "description": "About page meta title"
+  },
+  "about.meta.description": {
+    "message": "Learn about Fold Craft Launcher: an open-source Minecraft: Java Edition launcher for Android built by FCL-Team and the community.",
+    "description": "About page meta description"
+  },
+  "about.title": {
+    "message": "About Fold Craft Launcher",
+    "description": "About page title"
+  },
+  "about.desc": {
+    "message": "A free, open-source launcher that brings Minecraft: Java Edition to Android — built by FCL-Team and contributors around the world.",
+    "description": "About page description"
+  },
+  "about.lead1": {
+    "message": "Fold Craft Launcher (FCL) started as a way to run Minecraft: Java Edition on Android without a PC. It pairs the launcher core of HMCL with the Amethyst-Android game backend, so phones and tablets can launch the real Java game — mods, shaders and all.",
+    "description": "About intro paragraph 1"
+  },
+  "about.lead2": {
+    "message": "FCL is free software released under the GPL-3.0 license. The code, the documentation and the translations are all open: anyone can inspect it, improve it and share it.",
+    "description": "About intro paragraph 2"
+  },
+  "about.lead3": {
+    "message": "The project is developed by FCL-Team together with the community. Translations are managed on Weblate and the documentation lives in the FCL-Docs repository.",
+    "description": "About intro paragraph 3"
+  },
+  "about.github": {
+    "message": "View the source",
+    "description": "About GitHub button"
+  },
+  "about.sponsor": {
+    "message": "Sponsor the project",
+    "description": "About sponsor button"
+  },
+  "about.stats.title": {
+    "message": "The project in numbers",
+    "description": "About stats title"
+  },
+  "about.stats.downloads": {
+    "message": "APK downloads",
+    "description": "Stats label"
+  },
+  "about.stats.stars": {
+    "message": "GitHub stars",
+    "description": "Stats label"
+  },
+  "about.stats.contributors": {
+    "message": "Contributors",
+    "description": "Stats label"
+  },
+  "about.stats.releases": {
+    "message": "Public releases",
+    "description": "Stats label"
+  },
+  "about.stats.note": {
+    "message": "Counted from the public GitHub repository and release assets.",
+    "description": "Stats footnote"
+  },
+  "about.foundation.title": {
+    "message": "Standing on great open-source work",
+    "description": "Foundations title"
+  },
+  "about.foundation.sub": {
+    "message": "FCL would not exist without the projects below. Huge thanks to their maintainers and contributors.",
+    "description": "Foundations subtitle"
+  },
+  "about.foundation.hmcl": {
+    "message": "The launcher core: version management, downloads and launcher logic are ported from HMCL.",
+    "description": "Foundation description"
+  },
+  "about.foundation.amethyst": {
+    "message": "The Android game backend that starts the JVM and renders Minecraft on mobile devices.",
+    "description": "Foundation description"
+  },
+  "about.foundation.openjdk.title": {
+    "message": "OpenJDK runtimes",
+    "description": "Foundation title"
+  },
+  "about.foundation.openjdk": {
+    "message": "Multi-architecture Java runtimes built and released by FCL-Team for every supported device.",
+    "description": "Foundation description"
+  },
+  "about.foundation.terracotta": {
+    "message": "Peer-to-peer networking for LAN play between devices, wrapped by the Terracotta module.",
+    "description": "Foundation description"
+  },
+  "about.team.title": {
+    "message": "Built by the community",
+    "description": "Team title"
+  },
+  "about.team.sub": {
+    "message": "Code, documentation, translations, controller layouts and bug reports — FCL is the work of many hands.",
+    "description": "Team subtitle"
+  },
+  "about.team.action": {
+    "message": "All contributors on GitHub",
+    "description": "Contributors link"
+  },
+  "about.team.translate": {
+    "message": "Help translate FCL",
+    "description": "Translate link"
+  },
+  "about.credits.title": {
+    "message": "Related projects",
+    "description": "Credits title"
+  },
+  "about.credits.sub": {
+    "message": "FCL builds on and works together with these projects. The full dependency list lives in the repository README.",
+    "description": "Credits subtitle"
+  },
+  "about.license.title": {
+    "message": "Free software, forever",
+    "description": "License CTA title"
+  },
+  "about.license.desc": {
+    "message": "Fold Craft Launcher is distributed under the GNU General Public License v3. Read the license and the end-user agreement to learn what that means for you.",
+    "description": "License CTA description"
+  },
+  "about.license.gpl": {
+    "message": "GPL-3.0 license",
+    "description": "GPL button"
+  },
+  "about.license.eula": {
+    "message": "Read the EULA",
+    "description": "EULA button"
+  },
+  "community.meta.title": {
+    "message": "Community",
+    "description": "Community page meta title"
+  },
+  "community.meta.description": {
+    "message": "Join the Fold Craft Launcher community on Discord and QQ, report bugs on GitHub, help translate FCL and support development.",
+    "description": "Community page meta description"
+  },
+  "community.title": {
+    "message": "Join the FCL community",
+    "description": "Community page title"
+  },
+  "community.desc": {
+    "message": "FCL is built by volunteers and shaped by the people who play it. Ask questions, share your setups, report bugs or help translate the launcher.",
+    "description": "Community page description"
+  },
+  "community.discord.title": {
+    "message": "Discord",
+    "description": "Community card title"
+  },
+  "community.discord.desc": {
+    "message": "The main international community: support, modding talk and release news.",
+    "description": "Community card description"
+  },
+  "community.discord.action": {
+    "message": "Join the Discord",
+    "description": "Community card action"
+  },
+  "community.qq.title": {
+    "message": "QQ group",
+    "description": "Community card title"
+  },
+  "community.qq.desc": {
+    "message": "The Chinese-speaking community. Search for group 762054349 in QQ to join.",
+    "description": "Community card description"
+  },
+  "community.qq.action": {
+    "message": "Join the QQ group",
+    "description": "Community card action"
+  },
+  "community.github.title": {
+    "message": "GitHub",
+    "description": "Community card title"
+  },
+  "community.github.desc": {
+    "message": "Report bugs, request features, browse the source or open a pull request.",
+    "description": "Community card description"
+  },
+  "community.github.action": {
+    "message": "Open GitHub",
+    "description": "Community card action"
+  },
+  "community.weblate.title": {
+    "message": "Translations",
+    "description": "Community card title"
+  },
+  "community.weblate.desc": {
+    "message": "Translate FCL into your language in the browser — no tools required.",
+    "description": "Community card description"
+  },
+  "community.weblate.action": {
+    "message": "Open Weblate",
+    "description": "Community card action"
+  },
+  "community.docs.title": {
+    "message": "Documentation",
+    "description": "Community card title"
+  },
+  "community.docs.desc": {
+    "message": "Guides for accounts, custom controls, building from source and contributing.",
+    "description": "Community card description"
+  },
+  "community.docs.action": {
+    "message": "Read the docs",
+    "description": "Community card action"
+  },
+  "community.sponsor.title": {
+    "message": "Sponsor",
+    "description": "Community card title"
+  },
+  "community.sponsor.desc": {
+    "message": "Support the developers with a one-off or recurring donation on Afdian.",
+    "description": "Community card description"
+  },
+  "community.sponsor.action": {
+    "message": "Sponsor on Afdian",
+    "description": "Community card action"
+  },
+  "community.help.title": {
+    "message": "Before you ask",
+    "description": "Help section title"
+  },
+  "community.help.sub": {
+    "message": "A little information goes a long way. These four habits get your question answered much faster.",
+    "description": "Help section subtitle"
+  },
+  "community.help.tip1": {
+    "message": "Check the documentation and search existing issues before posting.",
+    "description": "Help tip 1"
+  },
+  "community.help.tip2": {
+    "message": "Include your FCL version, device model and Android version.",
+    "description": "Help tip 2"
+  },
+  "community.help.tip3": {
+    "message": "Attach the launcher log — it is the fastest way to find the cause.",
+    "description": "Help tip 3"
+  },
+  "community.help.tip4": {
+    "message": "Be patient and kind. Everyone here is a volunteer.",
+    "description": "Help tip 4"
+  },
+  "community.bugs.title": {
+    "message": "Found a bug?",
+    "description": "Bug reporting panel title"
+  },
+  "community.bugs.desc": {
+    "message": "The issue tracker is the best place for reproducible problems. Search first, then open a new issue with your log attached.",
+    "description": "Bug reporting panel text"
+  },
+  "community.bugs.action": {
+    "message": "Open an issue",
+    "description": "Open issues button"
+  },
+  "community.bugs.contributors": {
+    "message": "Meet the contributors",
+    "description": "Contributors button"
+  },
+  "download.meta.title": {
+    "message": "Download",
+    "description": "Download page meta title"
+  },
+  "download.meta.description": {
+    "message": "Download the latest Fold Craft Launcher APK for Android. Choose the build for your device, read the release notes and start playing.",
+    "description": "Download page meta description"
+  },
+  "download.title": {
+    "message": "Get Fold Craft Launcher",
+    "description": "Download page title"
+  },
+  "download.desc": {
+    "message": "The latest stable release, built for Android 8.0 and newer. Pick the package that matches your device — or grab the universal build if you are not sure.",
+    "description": "Download page description"
+  },
+  "download.changelog.title": {
+    "message": "What's new",
+    "description": "Changelog panel title"
+  },
+  "download.install.title": {
+    "message": "Up and running in minutes",
+    "description": "Install title"
+  },
+  "download.install.step1": {
+    "message": "Download the APK that matches your device and open the file.",
+    "description": "Install step 1"
+  },
+  "download.install.step2": {
+    "message": "If Android asks, allow your browser or file manager to install unknown apps, then confirm the installation.",
+    "description": "Install step 2"
+  },
+  "download.install.step3": {
+    "message": "Open FCL and add an account — Microsoft, offline, or a third-party authentication server.",
+    "description": "Install step 3"
+  },
+  "download.install.step4": {
+    "message": "Download a Minecraft version, adjust the renderer and controls, then press play.",
+    "description": "Install step 4"
+  },
+  "download.install.account": {
+    "message": "Account guide",
+    "description": "Link to account docs"
+  },
+  "download.install.docs": {
+    "message": "Documentation",
+    "description": "Link to documentation"
+  },
+  "download.history.title": {
+    "message": "Previous releases",
+    "description": "Release history title"
+  },
+  "download.history.desc": {
+    "message": "Looking for an older build? Every release stays available on GitHub.",
+    "description": "Release history description"
+  },
+  "download.history.all": {
+    "message": "All releases",
+    "description": "Link to all releases"
+  },
+  "download.disclaimer": {
+    "message": "Fold Craft Launcher is not affiliated with Mojang Studios or Microsoft. Minecraft is a trademark of Mojang Synergies AB.",
+    "description": "Trademark disclaimer"
+  },
+  "eula.meta.title": {
+    "message": "End-user license agreement",
+    "description": "EULA page meta title"
+  },
+  "eula.meta.description": {
+    "message": "The end-user license agreement for Fold Craft Launcher, a GPL-3.0 open-source Minecraft: Java Edition launcher for Android.",
+    "description": "EULA page meta description"
+  },
+  "eula.title": {
+    "message": "End-user license agreement",
+    "description": "EULA page title"
+  },
+  "eula.desc": {
+    "message": "Please read this agreement before installing or using Fold Craft Launcher.",
+    "description": "EULA page description"
+  },
+  "eula.applies": {
+    "message": "Applies to Fold Craft Launcher for Android",
+    "description": "EULA scope"
+  },
+  "eula.intro1": {
+    "message": "This agreement is made between you and FCL-Team, the developer of Fold Craft Launcher. By installing or using the software you agree to the terms below.",
+    "description": "EULA intro paragraph 1"
+  },
+  "eula.intro2": {
+    "message": "Fold Craft Launcher is free software distributed under the GNU General Public License v3. The full license text is available on the GNU website.",
+    "description": "EULA intro paragraph 2"
+  },
+  "eula.s1.title": {
+    "message": "1. User's obligations",
+    "description": "EULA section 1 title"
+  },
+  "eula.s1.i1": {
+    "message": "Use a device that meets the requirements. Fold Craft Launcher requires Android 8.0 or higher.",
+    "description": "EULA section 1 item 1"
+  },
+  "eula.s1.i2": {
+    "message": "Pay for the cost of Internet access and any other services you use.",
+    "description": "EULA section 1 item 2"
+  },
+  "eula.s1.i3": {
+    "message": "Take responsibility for all the consequences of your own use of the software.",
+    "description": "EULA section 1 item 3"
+  },
+  "eula.s2.title": {
+    "message": "2. Disclaimer",
+    "description": "EULA section 2 title"
+  },
+  "eula.s2.i1": {
+    "message": "Any risk arising from your use of the software is borne by you.",
+    "description": "EULA section 2 item 1"
+  },
+  "eula.s2.i2": {
+    "message": "The software is not guaranteed to meet every user's needs.",
+    "description": "EULA section 2 item 2"
+  },
+  "eula.s2.i3": {
+    "message": "The software is not responsible for the correctness, security or legality of third-party services.",
+    "description": "EULA section 2 item 3"
+  },
+  "eula.s2.i4": {
+    "message": "The developer is not responsible for any problems caused by your use of third-party services and cannot assume any legal responsibility for them.",
+    "description": "EULA section 2 item 4"
+  },
+  "eula.s3.title": {
+    "message": "3. Copyright",
+    "description": "EULA section 3 title"
+  },
+  "eula.s3.i1": {
+    "message": "The copyright, patent rights and other intellectual property rights of the software belong to the developer or the designated copyright owner.",
+    "description": "EULA section 3 item 1"
+  },
+  "eula.s3.i2": {
+    "message": "Third-party components used by the software belong to their respective copyright owners.",
+    "description": "EULA section 3 item 2"
+  },
+  "eula.s3.i3": {
+    "message": "The software is fully open source; please follow the open-source license of the software.",
+    "description": "EULA section 3 item 3"
+  },
+  "eula.footer": {
+    "message": "The full text of the GNU General Public License v3 is available at",
+    "description": "EULA footer note"
+  },
+  "eula.footer.source": {
+    "message": "The source code of Fold Craft Launcher is available on GitHub.",
+    "description": "EULA footer source note"
+  },
+  "home.meta.title": {
+    "message": "Minecraft: Java Edition on Android",
+    "description": "Homepage meta title"
+  },
+  "home.meta.description": {
+    "message": "Fold Craft Launcher is a free, open-source Minecraft: Java Edition launcher for Android. Play every version with mods, shaders and fully customizable touch controls.",
+    "description": "Homepage meta description"
+  },
+  "home.community.title": {
+    "message": "Join the community",
+    "description": "Community CTA title"
+  },
+  "home.community.desc": {
+    "message": "Get help, share your setups, report bugs and help translate FCL into your language.",
+    "description": "Community CTA description"
+  },
+  "home.community.qq": {
+    "message": "QQ Group",
+    "description": "QQ group button"
+  },
+  "home.community.more": {
+    "message": "All community links",
+    "description": "Link to the community page"
+  },
+  "home.community.translate": {
+    "message": "Translate FCL",
+    "description": "Link to Weblate"
+  },
+  "home.features.title": {
+    "message": "Everything you need to play",
+    "description": "Features section title"
+  },
+  "home.features.sub": {
+    "message": "A full-featured launcher built for touch screens — and for people who like to tinker.",
+    "description": "Features section subtitle"
+  },
+  "home.features.versions.title": {
+    "message": "Every Minecraft version",
+    "description": "Feature title"
+  },
+  "home.features.versions.desc": {
+    "message": "From Alpha and Beta snapshots to the newest release — switch versions in a single tap.",
+    "description": "Feature description"
+  },
+  "home.features.loaders.title": {
+    "message": "All the mod loaders",
+    "description": "Feature title"
+  },
+  "home.features.loaders.desc": {
+    "message": "Forge, NeoForge, Fabric, Quilt, LiteLoader, OptiFine and Cleanroom are supported out of the box.",
+    "description": "Feature description"
+  },
+  "home.features.java.title": {
+    "message": "Built-in Java runtimes",
+    "description": "Feature title"
+  },
+  "home.features.java.desc": {
+    "message": "Java 8, 17, 21 and 25 runtimes are bundled for every architecture — and you can import your own.",
+    "description": "Feature description"
+  },
+  "home.features.controls.title": {
+    "message": "Touch controls that fit",
+    "description": "Feature title"
+  },
+  "home.features.controls.desc": {
+    "message": "Virtual mouse, fully customizable controller layouts, and automatic conversion of ZalithLauncher 2 layouts.",
+    "description": "Feature description"
+  },
+  "home.features.shaders.title": {
+    "message": "Shaders and renderers",
+    "description": "Feature title"
+  },
+  "home.features.shaders.desc": {
+    "message": "Run shaders with VirGL, Zink or MobileGlues and get the best performance your device can offer.",
+    "description": "Feature description"
+  },
+  "home.features.resources.title": {
+    "message": "Manage everything",
+    "description": "Feature title"
+  },
+  "home.features.resources.desc": {
+    "message": "Download and organize mods, modpacks, resource packs, shaders and worlds without leaving the launcher.",
+    "description": "Feature description"
+  },
+  "home.features.themes.title": {
+    "message": "Make it yours",
+    "description": "Feature title"
+  },
+  "home.features.themes.desc": {
+    "message": "Custom backgrounds and color schemes, plus a plugin system for renderers and drivers.",
+    "description": "Feature description"
+  },
+  "home.features.opensource.title": {
+    "message": "Free and open source",
+    "description": "Feature title"
+  },
+  "home.features.opensource.desc": {
+    "message": "GPL-3.0 licensed, developed in the open by FCL-Team and a community of contributors.",
+    "description": "Feature description"
+  },
+  "home.hero.tagline": {
+    "message": "Minecraft: Java Edition on your Android device",
+    "description": "Hero tagline"
+  },
+  "home.hero.desc": {
+    "message": "FCL is a free, open-source launcher that runs every version of Minecraft: Java Edition on Android — with your favorite mods, shaders, custom controls and a theme that feels like home.",
+    "description": "Hero description"
+  },
+  "home.hero.download": {
+    "message": "Download FCL",
+    "description": "Hero primary button"
+  },
+  "home.hero.github": {
+    "message": "View on GitHub",
+    "description": "Hero secondary button"
+  },
+  "home.hero.note": {
+    "message": "Free and open source · GPL-3.0 · Built by FCL-Team and contributors",
+    "description": "Small note under hero buttons"
+  },
+  "home.stats.downloads": {
+    "message": "Downloads",
+    "description": "Downloads stat label"
+  },
+  "home.stats.stars": {
+    "message": "GitHub stars",
+    "description": "GitHub stars stat label"
+  },
+  "home.stats.contributors": {
+    "message": "Contributors",
+    "description": "Contributors stat label"
+  },
+  "download.changelog.empty": {
+    "message": "Release notes are available on GitHub.",
+    "description": "Empty changelog fallback"
+  },
+  "download.changelog.more": {
+    "message": "View all release notes on GitHub",
+    "description": "Link to full release notes"
+  },
+  "download.arch.arm64": {
+    "message": "ARM64 · 64-bit phones and tablets",
+    "description": "APK architecture label"
+  },
+  "download.arch.all": {
+    "message": "Universal · all architectures",
+    "description": "APK architecture label"
+  },
+  "download.arch.armv7": {
+    "message": "ARMv7 · older 32-bit devices",
+    "description": "APK architecture label"
+  },
+  "download.arch.x86_64": {
+    "message": "x86_64 · emulators and PCs",
+    "description": "APK architecture label"
+  },
+  "download.arch.x86": {
+    "message": "x86 · older emulators",
+    "description": "APK architecture label"
+  },
+  "download.published": {
+    "message": "Published",
+    "description": "Release date label"
+  },
+  "download.choose": {
+    "message": "Choose your download",
+    "description": "Panel title to choose an APK"
+  },
+  "download.arch.recommended": {
+    "message": "Recommended",
+    "description": "Recommended APK badge"
+  },
+  "download.downloadApk": {
+    "message": "Download APK",
+    "description": "Download APK button"
+  },
+  "download.mirror": {
+    "message": "Mirror download",
+    "description": "Mirror download button"
+  },
+  "download.hint.arch": {
+    "message": "Most phones are 64-bit ARM. If you are not sure which build to pick, choose the universal package.",
+    "description": "Hint about choosing an APK"
+  },
+  "download.hint.mirror": {
+    "message": "GitHub downloads can be slow in some regions — the mirror is hosted on a Chinese cloud drive.",
+    "description": "Hint about download mirror"
+  },
+  "download.history.github": {
+    "message": "GitHub release",
+    "description": "Release history link suffix"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "This page crashed.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Scroll back to top",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Archive",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Archive",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Blog list page navigation",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Newer entries",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Older entries",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Blog post page navigation",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Newer post",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Older post",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "View all tags",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "system mode",
+    "description": "The name for the system color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "light mode",
+    "description": "The name for the light color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "dark mode",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Switch between dark and light mode (currently {mode})",
+    "description": "The ARIA label for the color mode toggle"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Breadcrumbs",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Docs pages",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Previous",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Next",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "One doc tagged|{count} docs tagged",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} with \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Version: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "This is unreleased documentation for {siteTitle} {versionLabel} version.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "latest version",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "Edit this page",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Direct link to {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " on {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " by {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Last updated{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Versions",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.NotFound.title": {
+    "message": "Page Not Found",
+    "description": "The title of the 404 page"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Tags:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.admonition.caution": {
+    "message": "caution",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.admonition.danger": {
+    "message": "danger",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "info",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.note": {
+    "message": "note",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "tip",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.warning": {
+    "message": "warning",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Close",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Blog recent posts navigation",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Expand sidebar category '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Collapse sidebar category '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(opens in new tab)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Main",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Languages",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.NotFound.p1": {
+    "message": "We could not find what you were looking for.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Please contact the owner of the site that linked you to the original URL and let them know their link is broken.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "On this page",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Read more",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Read more about {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "One min read|{readingTime} min read",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Copy",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Copied",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Copy code to clipboard",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Toggle word wrap",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Home page",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Collapse sidebar",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Collapse sidebar",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Docs sidebar",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Close navigation bar",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Back to main menu",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Toggle navigation bar",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Expand the dropdown",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Collapse the dropdown",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Expand sidebar",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Expand sidebar",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.blog.post.plurals": {
+    "message": "One post|{count} posts",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} tagged with \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Authors",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "View all authors",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "This author has not written any posts yet.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Unlisted page",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Draft page",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
+    "description": "The draft content banner message"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 item|{count} items",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Try again",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Skip to main content",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Tags",
+    "description": "The title of the tag list page"
+  },
+  "download.device.label": {
+    "message": "Device / architecture",
+    "description": "Download page"
+  },
+  "download.device.all": {
+    "message": "All files",
+    "description": "Download page"
+  },
+  "download.device.all.desc": {
+    "message": "Show every architecture",
+    "description": "Download page"
+  },
+  "download.device.arm64": {
+    "message": "ARM64 · 64-bit phones and tablets",
+    "description": "Download page"
+  },
+  "download.device.arm64.desc": {
+    "message": "Recommended for most modern phones",
+    "description": "Download page"
+  },
+  "download.device.universal": {
+    "message": "Universal · all architectures",
+    "description": "Download page"
+  },
+  "download.device.universal.desc": {
+    "message": "Use this if you are not sure",
+    "description": "Download page"
+  },
+  "download.device.armv7": {
+    "message": "ARMv7 · older 32-bit devices",
+    "description": "Download page"
+  },
+  "download.device.armv7.desc": {
+    "message": "For older 32-bit devices",
+    "description": "Download page"
+  },
+  "download.device.x86_64": {
+    "message": "x86_64 · emulators and PCs",
+    "description": "Download page"
+  },
+  "download.device.x86_64.desc": {
+    "message": "Windows emulators / cloud phones",
+    "description": "Download page"
+  },
+  "download.device.x86": {
+    "message": "x86 · older emulators",
+    "description": "Download page"
+  },
+  "download.device.x86.desc": {
+    "message": "Only for legacy emulators",
+    "description": "Download page"
+  },
+  "download.device.auto": {
+    "message": "Selected automatically for your device",
+    "description": "Download page"
+  },
+  "download.source.label": {
+    "message": "Download source",
+    "description": "Download page"
+  },
+  "download.source.github": {
+    "message": "GitHub (official)",
+    "description": "Download page"
+  },
+  "download.source.github.desc": {
+    "message": "Official release channel · faster overseas",
+    "description": "Download page"
+  },
+  "download.source.netdisk": {
+    "message": "Netdisk mirror (Quark)",
+    "description": "Download page"
+  },
+  "download.source.netdisk.desc": {
+    "message": "Faster in China · official netdisk",
+    "description": "Download page"
+  },
+  "download.source.netdiskHint": {
+    "message": "You are using the netdisk mirror. Pick the file that matches your architecture.",
+    "description": "Download page"
+  },
+  "download.assets.downloads": {
+    "message": "downloads",
+    "description": "Download page"
+  },
+  "download.assets.title": {
+    "message": "Download files",
+    "description": "Download page"
+  },
+  "download.assets.download": {
+    "message": "Download now",
+    "description": "Download page"
+  },
+  "download.assets.netdisk": {
+    "message": "Netdisk download",
+    "description": "Download page"
+  },
+  "download.assets.empty": {
+    "message": "No package found for this device. Try another device type.",
+    "description": "Download page"
+  },
+  "download.cloud.title": {
+    "message": "Netdisk download",
+    "description": "Download page"
+  },
+  "download.cloud.desc": {
+    "message": "Recommended for users in China, more stable",
+    "description": "Download page"
+  },
+  "download.cloud.button": {
+    "message": "Quark netdisk",
+    "description": "Download page"
+  },
+  "download.notes.title": {
+    "message": "Release notes",
+    "description": "Download page"
+  },
+  "download.notes.viewAll": {
+    "message": "View full release notes on GitHub",
+    "description": "Download page"
+  },
+  "download.support.text": {
+    "message": "This is an open-source project — a star would really help~",
+    "description": "Download page"
+  },
+  "download.support.github": {
+    "message": "GitHub repository",
+    "description": "Download page"
+  },
+  "download.support.afdian": {
+    "message": "Afdian",
+    "description": "Download page"
+  }
+}

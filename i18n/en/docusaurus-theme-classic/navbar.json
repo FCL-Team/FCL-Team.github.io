@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "Fold Craft Launcher",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Fold Craft Launcher logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.下载": {
+    "message": "Download",
+    "description": "Navbar item with label 下载"
+  },
+  "item.label.文档": {
+    "message": "Documentation",
+    "description": "Navbar item with label 文档"
+  },
+  "item.label.社区": {
+    "message": "Community",
+    "description": "Navbar item with label 社区"
+  },
+  "item.label.关于": {
+    "message": "About",
+    "description": "Navbar item with label 关于"
+  }
+}

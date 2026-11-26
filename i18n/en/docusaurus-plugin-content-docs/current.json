@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.account": {
+    "message": "Account",
+    "description": "The label for category '账户' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.customization": {
+    "message": "Customization",
+    "description": "The label for category '自定义' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.development": {
+    "message": "Development",
+    "description": "The label for category '开发' in sidebar 'docs'"
+  }
+}
