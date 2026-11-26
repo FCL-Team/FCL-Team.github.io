@@ -18,6 +18,8 @@ const STROKE_ICONS = {
       <path d="m13 6 6 6-6 6" />
     </>
   ),
+  chevronDown: <path d="m6 9 6 6 6-6" />,
+  cloud: <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />,
   external: (
     <>
       <path d="M15 3h6v6" />

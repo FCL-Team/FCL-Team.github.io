@@ -5,7 +5,7 @@ import Translate, {translate} from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import PageHero from '@site/src/components/PageHero';
 import DownloadPanel from '@site/src/components/Download/DownloadPanel';
-import Changelog from '@site/src/components/Download/Changelog';
+import ReleaseNotes from '@site/src/components/Download/ReleaseNotes';
 import ReleaseHistory from '@site/src/components/Download/ReleaseHistory';
 import {Icon} from '@site/src/components/Icons';
 import releases from '@site/src/data/releases.json';
@@ -72,16 +72,7 @@ export default function Download() {
         <div className="fcl-container">
           <div className="fcl-download">
             <DownloadPanel />
-            <div className="fcl-panel">
-              <div className="fcl-release-meta">
-                <h2 className="fcl-panel__title" style={{marginBottom: 0}}>
-                  <Icon name="file" size={18} />
-                  <Translate id="download.changelog.title" description="Changelog panel title">更新内容</Translate>
-                </h2>
-                <span className="fcl-muted">v{latest.versionName}</span>
-              </div>
-              <Changelog text={changelog} />
-            </div>
+            <ReleaseNotes changelog={changelog} />
           </div>
         </div>
       </section>

@@ -1,129 +1,303 @@
-import React, {useState} from 'react';
-import Translate from '@docusaurus/Translate';
+import React, {useEffect, useMemo, useState} from 'react';
+import Translate, {translate} from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {Icon} from '@site/src/components/Icons';
+import Dropdown from '@site/src/components/Download/Dropdown';
 import {formatBytes, formatDate} from '@site/src/utils/format';
 import releases from '@site/src/data/releases.json';
 
-function ArchLabel({arch}) {
-  switch (arch) {
-    case 'arm64-v8a':
-      return (
-        <Translate id="download.arch.arm64" description="APK architecture label">ARM64 · 64 位手机与平板</Translate>
-      );
-    case 'all':
-      return (
-        <Translate id="download.arch.all" description="APK architecture label">通用 · 所有架构</Translate>
-      );
-    case 'armeabi-v7a':
-      return (
-        <Translate id="download.arch.armv7" description="APK architecture label">ARMv7 · 较旧的 32 位设备</Translate>
-      );
-    case 'x86_64':
-      return (
-        <Translate id="download.arch.x86_64" description="APK architecture label">x86_64 · 模拟器与 PC</Translate>
-      );
-    case 'x86':
-      return (
-        <Translate id="download.arch.x86" description="APK architecture label">x86 · 较旧的模拟器</Translate>
-      );
-    default:
-      return arch;
+const DEVICE_OPTIONS = [
+  {
+    id: 'all',
+    arch: null,
+    label: <Translate id="download.device.all" description="Download device option">全部文件</Translate>,
+    desc: (
+      <Translate id="download.device.all.desc" description="Download device option description">
+        显示所有架构的安装包
+      </Translate>
+    ),
+  },
+  {
+    id: 'arm64',
+    arch: 'arm64-v8a',
+    label: <Translate id="download.device.arm64" description="Download device option">ARM64 · 64 位手机与平板</Translate>,
+    desc: (
+      <Translate id="download.device.arm64.desc" description="Download device option description">
+        大多数现代手机，推荐
+      </Translate>
+    ),
+  },
+  {
+    id: 'universal',
+    arch: 'all',
+    label: <Translate id="download.device.universal" description="Download device option">通用版 · 所有架构</Translate>,
+    desc: (
+      <Translate id="download.device.universal.desc" description="Download device option description">
+        不确定选哪个时使用
+      </Translate>
+    ),
+  },
+  {
+    id: 'armv7',
+    arch: 'armeabi-v7a',
+    label: <Translate id="download.device.armv7" description="Download device option">ARMv7 · 较旧的 32 位设备</Translate>,
+    desc: (
+      <Translate id="download.device.armv7.desc" description="Download device option description">
+        32 位老设备
+      </Translate>
+    ),
+  },
+  {
+    id: 'x86_64',
+    arch: 'x86_64',
+    label: <Translate id="download.device.x86_64" description="Download device option">x86_64 · 模拟器与 PC</Translate>,
+    desc: (
+      <Translate id="download.device.x86_64.desc" description="Download device option description">
+        Windows 模拟器 / 云手机
+      </Translate>
+    ),
+  },
+  {
+    id: 'x86',
+    arch: 'x86',
+    label: <Translate id="download.device.x86" description="Download device option">x86 · 较旧的模拟器</Translate>,
+    desc: (
+      <Translate id="download.device.x86.desc" description="Download device option description">
+        仅用于旧模拟器
+      </Translate>
+    ),
+  },
+];
+
+const SOURCE_OPTIONS = [
+  {
+    id: 'github',
+    label: <Translate id="download.source.github" description="Download source option">GitHub 官方</Translate>,
+    desc: (
+      <Translate id="download.source.github.desc" description="Download source option description">
+        官方发布渠道 · 海外较快
+      </Translate>
+    ),
+  },
+  {
+    id: 'netdisk',
+    label: <Translate id="download.source.netdisk" description="Download source option">网盘镜像（夸克）</Translate>,
+    desc: (
+      <Translate id="download.source.netdisk.desc" description="Download source option description">
+        国内较快 · 官方网盘
+      </Translate>
+    ),
+  },
+];
+
+function detectDevice() {
+  if (typeof navigator === 'undefined') {
+    return 'all';
   }
+  const ua = navigator.userAgent.toLowerCase();
+  if (!ua.includes('android')) {
+    return 'all';
+  }
+  if (ua.includes('arm64') || ua.includes('aarch64')) {
+    return 'arm64';
+  }
+  if (ua.includes('armv7') || ua.includes('armeabi')) {
+    return 'armv7';
+  }
+  // Android phone browsers usually do not expose the CPU architecture.
+  return 'arm64';
 }
 
 export default function DownloadPanel() {
   const {i18n} = useDocusaurusContext();
   const {latest} = releases;
-  const [selectedArch, setSelectedArch] = useState(
-    latest.assets[0] ? latest.assets[0].arch : 'all',
+  const [deviceId, setDeviceId] = useState('all');
+  const [userChangedDevice, setUserChangedDevice] = useState(false);
+  const [autoDetected, setAutoDetected] = useState(false);
+  const [sourceId, setSourceId] = useState('github');
+
+  useEffect(() => {
+    const detected = detectDevice();
+    const available = DEVICE_OPTIONS.some(
+      (option) =>
+        option.id === detected &&
+        (option.arch === null || latest.assets.some((asset) => asset.arch === option.arch)),
+    );
+    if (available && detected !== 'all') {
+      setDeviceId(detected);
+      setAutoDetected(true);
+    }
+  }, [latest.assets]);
+
+  const currentDevice = DEVICE_OPTIONS.find((option) => option.id === deviceId);
+  const filteredAssets = currentDevice?.arch
+    ? latest.assets.filter((asset) => asset.arch === currentDevice.arch)
+    : latest.assets;
+  const totalDownloads = latest.assets.reduce((sum, asset) => sum + (asset.downloads || 0), 0);
+  const isNetdisk = sourceId === 'netdisk' && Boolean(latest.netdiskUrl);
+
+  const deviceOptions = useMemo(
+    () =>
+      DEVICE_OPTIONS.filter(
+        (option) =>
+          option.arch === null || latest.assets.some((asset) => asset.arch === option.arch),
+      ),
+    [latest.assets],
   );
-  const selected =
-    latest.assets.find((asset) => asset.arch === selectedArch) || latest.assets[0];
 
   return (
-    <div className="fcl-panel">
-      <div className="fcl-release-meta">
-        <span className="fcl-version-chip">
-          <Icon name="tag" size={14} />
-          v{latest.versionName}
-        </span>
-        <span className="fcl-muted">
-          <Translate id="download.published" description="Release date label">发布于</Translate>{' '}
-          {formatDate(latest.publishedAt, i18n.currentLocale)}
+    <div className="fcl-panel fcl-download-main">
+      <div className="fcl-release-head">
+        <div>
+          <div className="fcl-release-head__version">v{latest.versionName}</div>
+          <div className="fcl-release-head__meta">
+            <Translate id="download.published" description="Release date label">
+              发布于
+            </Translate>{' '}
+            {formatDate(latest.publishedAt, i18n.currentLocale)}
+            {' · '}
+            {totalDownloads.toLocaleString()}{' '}
+            <Translate id="download.assets.downloads" description="Download count suffix">
+              次下载
+            </Translate>
+          </div>
+        </div>
+        <span className="fcl-release-badge">
+          <Translate id="download.latest" description="Latest stable badge">
+            最新稳定版
+          </Translate>
         </span>
       </div>
 
-      <h2 className="fcl-panel__title">
-        <Icon name="download" size={18} />
-        <Translate id="download.choose" description="Panel title to choose an APK">选择下载</Translate>
-      </h2>
-
-      <div
-        className="fcl-arch-grid"
-        role="radiogroup"
-        aria-label="APK architecture">
-        {latest.assets.map((asset) => {
-          const active = asset.arch === selectedArch;
-          return (
-            <button
-              key={asset.arch}
-              type="button"
-              role="radio"
-              aria-checked={active}
-              className={'fcl-arch' + (active ? ' fcl-arch--active' : '')}
-              onClick={() => setSelectedArch(asset.arch)}>
-              <span className="fcl-arch__name">
-                <ArchLabel arch={asset.arch} />
-                {asset.arch === 'arm64-v8a' ? (
-                  <span className="fcl-arch__badge">
-                    <Translate
-                      id="download.arch.recommended"
-                      description="Recommended APK badge">推荐</Translate>
-                  </span>
-                ) : null}
-              </span>
-              <span className="fcl-arch__meta">{formatBytes(asset.size)}</span>
-            </button>
-          );
-        })}
+      <div className="fcl-download-controls">
+        <div>
+          <Dropdown
+            label={
+              <Translate id="download.device.label" description="Device selector label">
+                设备 / 架构
+              </Translate>
+            }
+            value={deviceId}
+            options={deviceOptions}
+            icon="cpu"
+            onChange={(next) => {
+              setDeviceId(next);
+              setUserChangedDevice(true);
+            }}
+          />
+          {autoDetected && !userChangedDevice ? (
+            <p className="fcl-select__hint">
+              <Translate id="download.device.auto" description="Auto detected device hint">
+                已根据你的设备自动选择
+              </Translate>
+            </p>
+          ) : null}
+        </div>
+        <Dropdown
+          label={
+            <Translate id="download.source.label" description="Download source selector label">
+              下载源
+            </Translate>
+          }
+          value={sourceId}
+          options={SOURCE_OPTIONS}
+          icon="globe"
+          onChange={setSourceId}
+        />
       </div>
 
-      <div className="fcl-download__actions">
-        {selected ? (
+      {latest.netdiskUrl ? (
+        <div className="fcl-cloud">
+          <div className="fcl-cloud__icon">
+            <Icon name="cloud" size={20} />
+          </div>
+          <div className="fcl-cloud__text">
+            <strong>
+              <Translate id="download.cloud.title" description="Cloud drive banner title">
+                网盘下载
+              </Translate>
+            </strong>
+            <span>
+              <Translate id="download.cloud.desc" description="Cloud drive banner description">
+                国内用户推荐，下载更稳定
+              </Translate>
+            </span>
+          </div>
           <a
-            className="fcl-btn fcl-btn--primary"
-            href={selected.url}
-            target="_blank"
-            rel="noreferrer">
-            <Icon name="download" size={18} />
-            <Translate id="download.downloadApk" description="Download APK button">下载 APK</Translate>
-          </a>
-        ) : null}
-        {latest.netdiskUrl ? (
-          <a
-            className="fcl-btn fcl-btn--ghost"
+            className="fcl-btn fcl-btn--primary fcl-btn--sm"
             href={latest.netdiskUrl}
             target="_blank"
             rel="noreferrer">
-            <Icon name="external" size={16} />
-            <Translate id="download.mirror" description="Mirror download button">网盘下载</Translate>
+            <Icon name="external" size={15} />
+            <Translate id="download.cloud.button" description="Cloud drive button">
+              夸克网盘
+            </Translate>
           </a>
-        ) : null}
-      </div>
+        </div>
+      ) : null}
 
-      <div className="fcl-hint">
-        <Icon name="info" size={16} />
-        <span>
-          <Translate id="download.hint.arch" description="Hint about choosing an APK">大多数手机都是 64 位 ARM 架构。如果不确定该选哪个，请下载通用包。</Translate>
-        </span>
-      </div>
+      {isNetdisk ? (
+        <p className="fcl-select__hint fcl-select__hint--block">
+          <Icon name="info" size={14} />
+          <Translate
+            id="download.source.netdiskHint"
+            description="Hint when the netdisk source is selected">
+            当前为网盘下载，请按文件名选择对应架构的安装包。
+          </Translate>
+        </p>
+      ) : null}
 
-      <div className="fcl-hint">
-        <Icon name="globe" size={16} />
-        <span>
-          <Translate id="download.hint.mirror" description="Hint about download mirror">部分地区访问 GitHub 可能较慢——可通过国内网盘镜像下载。</Translate>
-        </span>
+      <h4 className="fcl-assets-title">
+        <Icon name="download" size={15} />
+        <Translate id="download.assets.title" description="Asset list title">
+          下载文件列表
+        </Translate>
+      </h4>
+
+      <div className="fcl-assets">
+        {filteredAssets.length > 0 ? (
+          filteredAssets.map((asset) => (
+            <div className="fcl-asset" key={asset.arch}>
+              <div className="fcl-asset__icon">
+                <Icon name="monitor" size={18} />
+              </div>
+              <div className="fcl-asset__main">
+                <div className="fcl-asset__name">{asset.name}</div>
+                <div className="fcl-asset__meta">
+                  <span>{formatBytes(asset.size)}</span>
+                  <span>
+                    {(asset.downloads || 0).toLocaleString()}{' '}
+                    <Translate id="download.assets.downloads" description="Download count suffix">
+                      次下载
+                    </Translate>
+                  </span>
+                </div>
+              </div>
+              <a
+                className="fcl-btn fcl-btn--primary fcl-btn--sm"
+                href={isNetdisk ? latest.netdiskUrl : asset.url}
+                target="_blank"
+                rel="noreferrer">
+                <Icon name="download" size={15} />
+                {isNetdisk ? (
+                  <Translate id="download.assets.netdisk" description="Netdisk download button">
+                    网盘下载
+                  </Translate>
+                ) : (
+                  <Translate id="download.assets.download" description="Download button">
+                    立即下载
+                  </Translate>
+                )}
+              </a>
+            </div>
+          ))
+        ) : (
+          <p className="fcl-assets-empty">
+            <Translate id="download.assets.empty" description="Empty asset list hint">
+              没有找到该设备对应的安装包，请切换设备类型。
+            </Translate>
+          </p>
+        )}
       </div>
     </div>
   );

@@ -1,6 +1,5 @@
 import React from 'react';
 import Translate from '@docusaurus/Translate';
-import {Icon} from '@site/src/components/Icons';
 import {LINKS} from '@site/src/constants';
 
 function linkify(line, keyPrefix) {
@@ -38,12 +37,6 @@ export default function Changelog({text}) {
       {lines.map((line, index) => (
         <p key={'line-' + index}>{linkify(line, 'line-' + index)}</p>
       ))}
-      <p className="fcl-changelog__footer">
-        <a href={LINKS.releases} target="_blank" rel="noreferrer">
-          <Translate id="download.changelog.more" description="Link to full release notes">在 GitHub 查看全部更新日志</Translate>{' '}
-          <Icon name="external" size={14} />
-        </a>
-      </p>
     </div>
   );
 }

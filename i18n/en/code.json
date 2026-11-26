@@ -1021,5 +1021,129 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "download.latest": {
+    "message": "Latest stable",
+    "description": "Download page"
+  },
+  "download.device.label": {
+    "message": "Device / architecture",
+    "description": "Download page"
+  },
+  "download.device.all": {
+    "message": "All files",
+    "description": "Download page"
+  },
+  "download.device.all.desc": {
+    "message": "Show every architecture",
+    "description": "Download page"
+  },
+  "download.device.arm64": {
+    "message": "ARM64 · 64-bit phones and tablets",
+    "description": "Download page"
+  },
+  "download.device.arm64.desc": {
+    "message": "Recommended for most modern phones",
+    "description": "Download page"
+  },
+  "download.device.universal": {
+    "message": "Universal · all architectures",
+    "description": "Download page"
+  },
+  "download.device.universal.desc": {
+    "message": "Use this if you are not sure",
+    "description": "Download page"
+  },
+  "download.device.armv7": {
+    "message": "ARMv7 · older 32-bit devices",
+    "description": "Download page"
+  },
+  "download.device.armv7.desc": {
+    "message": "For older 32-bit devices",
+    "description": "Download page"
+  },
+  "download.device.x86_64": {
+    "message": "x86_64 · emulators and PCs",
+    "description": "Download page"
+  },
+  "download.device.x86_64.desc": {
+    "message": "Windows emulators / cloud phones",
+    "description": "Download page"
+  },
+  "download.device.x86": {
+    "message": "x86 · older emulators",
+    "description": "Download page"
+  },
+  "download.device.x86.desc": {
+    "message": "Only for legacy emulators",
+    "description": "Download page"
+  },
+  "download.device.auto": {
+    "message": "Selected automatically for your device",
+    "description": "Download page"
+  },
+  "download.source.label": {
+    "message": "Download source",
+    "description": "Download page"
+  },
+  "download.source.github": {
+    "message": "GitHub (official)",
+    "description": "Download page"
+  },
+  "download.source.github.desc": {
+    "message": "Official release channel · faster overseas",
+    "description": "Download page"
+  },
+  "download.source.netdisk": {
+    "message": "Netdisk mirror (Quark)",
+    "description": "Download page"
+  },
+  "download.source.netdisk.desc": {
+    "message": "Faster in China · official netdisk",
+    "description": "Download page"
+  },
+  "download.source.netdiskHint": {
+    "message": "You are using the netdisk mirror. Pick the file that matches your architecture.",
+    "description": "Download page"
+  },
+  "download.assets.downloads": {
+    "message": "downloads",
+    "description": "Download page"
+  },
+  "download.assets.title": {
+    "message": "Download files",
+    "description": "Download page"
+  },
+  "download.assets.download": {
+    "message": "Download now",
+    "description": "Download page"
+  },
+  "download.assets.netdisk": {
+    "message": "Netdisk download",
+    "description": "Download page"
+  },
+  "download.assets.empty": {
+    "message": "No package found for this device. Try another device type.",
+    "description": "Download page"
+  },
+  "download.cloud.title": {
+    "message": "Netdisk download",
+    "description": "Download page"
+  },
+  "download.cloud.desc": {
+    "message": "Recommended for users in China, more stable",
+    "description": "Download page"
+  },
+  "download.cloud.button": {
+    "message": "Quark netdisk",
+    "description": "Download page"
+  },
+  "download.notes.title": {
+    "message": "Release notes",
+    "description": "Download page"
+  },
+  "download.notes.viewAll": {
+    "message": "View full release notes on GitHub",
+    "description": "Download page"
   }
 }
