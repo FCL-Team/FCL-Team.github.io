@@ -2,7 +2,6 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import Translate, {translate} from '@docusaurus/Translate';
 import PageHero from '@site/src/components/PageHero';
-import {Icon} from '@site/src/components/Icons';
 import {LINKS} from '@site/src/constants';
 
 export default function Eula() {
@@ -21,9 +20,6 @@ export default function Eula() {
         description: 'EULA page meta description',
       })}>
       <PageHero
-        eyebrow={
-          <Translate id="eula.eyebrow" description="EULA page eyebrow">法律</Translate>
-        }
         title={
           <Translate id="eula.title" description="EULA page title">最终用户许可协议</Translate>
         }
@@ -35,10 +31,6 @@ export default function Eula() {
       <div className="fcl-legal">
         <div className="fcl-legal__card">
           <div className="fcl-legal__meta">
-            <span className="fcl-chip">
-              <Icon name="shield" size={14} />
-              GPL-3.0
-            </span>
             <span>
               <Translate id="eula.applies" description="EULA scope">适用于 Android 版 Fold Craft Launcher</Translate>
             </span>

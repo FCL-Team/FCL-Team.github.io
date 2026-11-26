@@ -51,9 +51,6 @@ export default function About() {
         description: 'About page meta description',
       })}>
       <PageHero
-        eyebrow={
-          <Translate id="about.eyebrow" description="About page eyebrow">关于</Translate>
-        }
         title={
           <Translate id="about.title" description="About page title">关于 Fold Craft Launcher</Translate>
         }
@@ -138,9 +135,6 @@ export default function About() {
       <section className="fcl-section fcl-section--alt">
         <div className="fcl-container">
           <div className="fcl-section-head">
-            <span className="fcl-eyebrow">
-              <Translate id="about.foundation.eyebrow" description="Foundations eyebrow">项目基础</Translate>
-            </span>
             <h2 className="fcl-section-title">
               <Translate id="about.foundation.title" description="Foundations title">站在优秀的开源成果之上</Translate>
             </h2>
@@ -190,9 +184,6 @@ export default function About() {
       <section className="fcl-section">
         <div className="fcl-container">
           <div className="fcl-section-head">
-            <span className="fcl-eyebrow">
-              <Translate id="about.team.eyebrow" description="Team eyebrow">贡献者</Translate>
-            </span>
             <h2 className="fcl-section-title">
               <Translate id="about.team.title" description="Team title">由社区共同构建</Translate>
             </h2>
@@ -247,9 +238,6 @@ export default function About() {
           <div className="fcl-about-grid">
             <div>
               <div className="fcl-section-head fcl-section-head--left">
-                <span className="fcl-eyebrow">
-                  <Translate id="about.credits.eyebrow" description="Credits eyebrow">致谢</Translate>
-                </span>
                 <h2 className="fcl-section-title">
                   <Translate id="about.credits.title" description="Credits title">相关项目</Translate>
                 </h2>

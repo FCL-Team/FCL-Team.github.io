@@ -16,22 +16,12 @@ function Stat({value, label}) {
 }
 
 export default function Hero() {
-  const {latest, stats} = releases;
+  const {stats} = releases;
 
   return (
     <section className="fcl-hero">
       <div className="fcl-container fcl-hero__inner">
         <div className="fcl-hero__content">
-          <div className="fcl-hero__badges">
-            <span className="fcl-eyebrow">
-              <Icon name="tag" size={13} />
-              v{latest.versionName}
-            </span>
-            <span className="fcl-hero__meta">
-              <Translate id="home.hero.badge" description="Hero badge text next to the version">最新版本 · Android 8.0+</Translate>
-            </span>
-          </div>
-
           <h1 className="fcl-hero__title">
             Fold Craft <span className="fcl-hero__gradient">Launcher</span>
           </h1>
@@ -110,18 +100,6 @@ export default function Hero() {
               height={720}
               loading="lazy"
             />
-          </div>
-          <div className="fcl-hero__badge">
-            <span className="fcl-hero__badge-dot" aria-hidden="true" />
-            v{latest.versionName} ·{' '}
-            <span className="fcl-hero__badge-text--dark">
-              <Translate id="home.hero.shotBadge" description="Badge on the hero screenshot">暗色主题</Translate>
-            </span>
-            <span className="fcl-hero__badge-text--light">
-              <Translate
-                id="home.hero.shotBadge.light"
-                description="Badge on the hero screenshot when the light theme is active">亮色主题</Translate>
-            </span>
           </div>
         </div>
       </div>

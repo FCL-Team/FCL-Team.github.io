@@ -54,9 +54,6 @@ export default function Community() {
         description: 'Community page meta description',
       })}>
       <PageHero
-        eyebrow={
-          <Translate id="community.eyebrow" description="Community page eyebrow">社区</Translate>
-        }
         title={
           <Translate id="community.title" description="Community page title">加入 FCL 社区</Translate>
         }
@@ -156,9 +153,6 @@ export default function Community() {
           <div className="fcl-about-grid">
             <div>
               <div className="fcl-section-head fcl-section-head--left">
-                <span className="fcl-eyebrow">
-                  <Translate id="community.help.eyebrow" description="Help eyebrow">获取帮助</Translate>
-                </span>
                 <h2 className="fcl-section-title">
                   <Translate id="community.help.title" description="Help section title">提问之前</Translate>
                 </h2>

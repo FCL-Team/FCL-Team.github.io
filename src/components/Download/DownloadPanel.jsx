@@ -162,11 +162,6 @@ export default function DownloadPanel() {
             </Translate>
           </div>
         </div>
-        <span className="fcl-release-badge">
-          <Translate id="download.latest" description="Latest stable badge">
-            最新稳定版
-          </Translate>
-        </span>
       </div>
 
       <div className="fcl-download-controls">

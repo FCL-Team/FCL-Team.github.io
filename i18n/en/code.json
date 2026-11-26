@@ -11,10 +11,6 @@
     "message": "Learn about Fold Craft Launcher: an open-source Minecraft: Java Edition launcher for Android built by FCL-Team and the community.",
     "description": "About page meta description"
   },
-  "about.eyebrow": {
-    "message": "About",
-    "description": "About page eyebrow"
-  },
   "about.title": {
     "message": "About Fold Craft Launcher",
     "description": "About page title"
@@ -67,10 +63,6 @@
     "message": "Counted from the public GitHub repository and release assets.",
     "description": "Stats footnote"
   },
-  "about.foundation.eyebrow": {
-    "message": "Foundations",
-    "description": "Foundations eyebrow"
-  },
   "about.foundation.title": {
     "message": "Standing on great open-source work",
     "description": "Foundations title"
@@ -99,10 +91,6 @@
     "message": "Peer-to-peer networking for LAN play between devices, wrapped by the Terracotta module.",
     "description": "Foundation description"
   },
-  "about.team.eyebrow": {
-    "message": "Contributors",
-    "description": "Team eyebrow"
-  },
   "about.team.title": {
     "message": "Built by the community",
     "description": "Team title"
@@ -118,10 +106,6 @@
   "about.team.translate": {
     "message": "Help translate FCL",
     "description": "Translate link"
-  },
-  "about.credits.eyebrow": {
-    "message": "Credits",
-    "description": "Credits eyebrow"
   },
   "about.credits.title": {
     "message": "Related projects",
@@ -154,10 +138,6 @@
   "community.meta.description": {
     "message": "Join the Fold Craft Launcher community on Discord and QQ, report bugs on GitHub, help translate FCL and support development.",
     "description": "Community page meta description"
-  },
-  "community.eyebrow": {
-    "message": "Community",
-    "description": "Community page eyebrow"
   },
   "community.title": {
     "message": "Join the FCL community",
@@ -239,10 +219,6 @@
     "message": "Sponsor on Afdian",
     "description": "Community card action"
   },
-  "community.help.eyebrow": {
-    "message": "Getting help",
-    "description": "Help eyebrow"
-  },
   "community.help.title": {
     "message": "Before you ask",
     "description": "Help section title"
@@ -291,10 +267,6 @@
     "message": "Download the latest Fold Craft Launcher APK for Android. Choose the build for your device, read the release notes and start playing.",
     "description": "Download page meta description"
   },
-  "download.eyebrow": {
-    "message": "Download",
-    "description": "Download page eyebrow"
-  },
   "download.title": {
     "message": "Get Fold Craft Launcher",
     "description": "Download page title"
@@ -303,21 +275,9 @@
     "message": "The latest stable release, built for Android 8.0 and newer. Pick the package that matches your device — or grab the universal build if you are not sure.",
     "description": "Download page description"
   },
-  "download.chip.gpl": {
-    "message": "GPL-3.0",
-    "description": "Download page chip"
-  },
-  "download.chip.android": {
-    "message": "Android 8.0+",
-    "description": "Download page chip"
-  },
   "download.changelog.title": {
     "message": "What's new",
     "description": "Changelog panel title"
-  },
-  "download.install.eyebrow": {
-    "message": "Installation",
-    "description": "Install eyebrow"
   },
   "download.install.title": {
     "message": "Up and running in minutes",
@@ -370,10 +330,6 @@
   "eula.meta.description": {
     "message": "The end-user license agreement for Fold Craft Launcher, a GPL-3.0 open-source Minecraft: Java Edition launcher for Android.",
     "description": "EULA page meta description"
-  },
-  "eula.eyebrow": {
-    "message": "Legal",
-    "description": "EULA page eyebrow"
   },
   "eula.title": {
     "message": "End-user license agreement",
@@ -483,10 +439,6 @@
     "message": "Translate FCL",
     "description": "Link to Weblate"
   },
-  "home.features.eyebrow": {
-    "message": "Features",
-    "description": "Features section eyebrow"
-  },
   "home.features.title": {
     "message": "Everything you need to play",
     "description": "Features section title"
@@ -559,10 +511,6 @@
     "message": "GPL-3.0 licensed, developed in the open by FCL-Team and a community of contributors.",
     "description": "Feature description"
   },
-  "home.hero.badge": {
-    "message": "Latest release · Android 8.0+",
-    "description": "Hero badge text next to the version"
-  },
   "home.hero.tagline": {
     "message": "Minecraft: Java Edition on your Android device",
     "description": "Hero tagline"
@@ -594,14 +542,6 @@
   "home.stats.contributors": {
     "message": "Contributors",
     "description": "Contributors stat label"
-  },
-  "home.hero.shotBadge": {
-    "message": "dark theme",
-    "description": "Badge on the hero screenshot"
-  },
-  "home.hero.shotBadge.light": {
-    "message": "light theme",
-    "description": "Badge on the hero screenshot when the light theme is active"
   },
   "download.changelog.empty": {
     "message": "Release notes are available on GitHub.",
@@ -989,10 +929,6 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
-  },
-  "download.latest": {
-    "message": "Latest stable",
-    "description": "Download page"
   },
   "download.device.label": {
     "message": "Device / architecture",

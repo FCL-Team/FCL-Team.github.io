@@ -31,30 +31,13 @@ export default function Download() {
         description: 'Download page meta description',
       })}>
       <PageHero
-        eyebrow={
-          <Translate id="download.eyebrow" description="Download page eyebrow">下载</Translate>
-        }
         title={
           <Translate id="download.title" description="Download page title">获取 Fold Craft Launcher</Translate>
         }
         description={
           <Translate id="download.desc" description="Download page description">最新稳定版，支持 Android 8.0 及以上系统。请选择与你的设备匹配的安装包——拿不准的话，就选通用包。</Translate>
-        }>
-        <div className="fcl-chips">
-          <span className="fcl-chip">
-            <Icon name="shield" size={14} />
-            <Translate id="download.chip.gpl" description="Download page chip">GPL-3.0</Translate>
-          </span>
-          <span className="fcl-chip">
-            <Icon name="monitor" size={14} />
-            <Translate id="download.chip.android" description="Download page chip">Android 8.0+</Translate>
-          </span>
-          <span className="fcl-chip">
-            <Icon name="tag" size={14} />
-            v{latest.versionName}
-          </span>
-        </div>
-      </PageHero>
+        }
+      />
 
       <section className="fcl-section" style={{paddingTop: 0}}>
         <div className="fcl-container">
@@ -70,9 +53,6 @@ export default function Download() {
           <div className="fcl-about-grid">
             <div>
               <div className="fcl-section-head fcl-section-head--left">
-                <span className="fcl-eyebrow">
-                  <Translate id="download.install.eyebrow" description="Install eyebrow">安装</Translate>
-                </span>
                 <h2 className="fcl-section-title">
                   <Translate id="download.install.title" description="Install title">几分钟内即可开玩</Translate>
                 </h2>

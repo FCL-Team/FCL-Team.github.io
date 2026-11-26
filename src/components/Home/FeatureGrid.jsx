@@ -19,9 +19,6 @@ export default function FeatureGrid() {
     <section className="fcl-section fcl-section--alt" id="features">
       <div className="fcl-container">
         <div className="fcl-section-head">
-          <span className="fcl-eyebrow">
-            <Translate id="home.features.eyebrow" description="Features section eyebrow">功能</Translate>
-          </span>
           <h2 className="fcl-section-title">
             <Translate id="home.features.title" description="Features section title">游玩所需，一应俱全</Translate>
           </h2>

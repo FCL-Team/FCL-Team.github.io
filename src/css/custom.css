@@ -290,20 +290,6 @@ body {
   text-align: left;
 }
 
-.fcl-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  padding: 0.38rem 0.85rem;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--fcl-accent);
-  background: color-mix(in srgb, var(--fcl-accent) 10%, transparent);
-  border: 1px solid color-mix(in srgb, var(--fcl-accent) 26%, transparent);
-}
 
 .fcl-section-title {
   font-size: clamp(1.9rem, 4vw, 2.7rem);
@@ -445,17 +431,7 @@ body {
   align-items: center;
 }
 
-.fcl-hero__badges {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  flex-wrap: wrap;
-}
 
-.fcl-hero__meta {
-  font-size: 0.86rem;
-  color: var(--fcl-text-muted);
-}
 
 .fcl-hero__title {
   font-size: clamp(2.6rem, 5.8vw, 4.4rem);
@@ -584,17 +560,8 @@ body {
   display: block;
 }
 
-.fcl-hero__badge-text--light {
-  display: none;
-}
 
-[data-theme='light'] .fcl-hero__badge-text--dark {
-  display: none;
-}
 
-[data-theme='light'] .fcl-hero__badge-text--light {
-  display: inline;
-}
 
 .fcl-hero__shot::after {
   content: '';
@@ -605,31 +572,7 @@ body {
   pointer-events: none;
 }
 
-.fcl-hero__badge {
-  position: absolute;
-  z-index: 3;
-  right: -0.9rem;
-  bottom: -1.1rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.65rem 1rem;
-  border-radius: 14px;
-  background: var(--fcl-surface);
-  border: 1px solid var(--fcl-border);
-  box-shadow: var(--fcl-shadow);
-  font-size: 0.83rem;
-  font-weight: 600;
-  color: var(--fcl-text-muted);
-}
 
-.fcl-hero__badge-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--fcl-accent);
-  box-shadow: 0 0 0 4px color-mix(in srgb, var(--fcl-accent) 18%, transparent);
-}
 
 /* -------------------------------------------------------------------------
  * Cards & feature grid
@@ -807,9 +750,6 @@ body {
   line-height: 1.7;
 }
 
-.fcl-page-head__extra {
-  margin-top: 1.5rem;
-}
 
 .fcl-panel {
   border-radius: var(--fcl-radius);
@@ -847,24 +787,7 @@ body {
   font-size: 0.88rem;
 }
 
-.fcl-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
 
-.fcl-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  padding: 0.42rem 0.8rem;
-  border-radius: 999px;
-  border: 1px solid var(--fcl-border);
-  background: var(--fcl-surface-2);
-  color: var(--fcl-text-muted);
-  font-size: 0.82rem;
-  font-weight: 600;
-}
 
 /* -------------------------------------------------------------------------
  * Download page
@@ -905,19 +828,6 @@ body {
   color: var(--fcl-text-muted);
 }
 
-.fcl-release-badge {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.35rem 0.75rem;
-  border-radius: 999px;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  color: var(--fcl-accent);
-  background: color-mix(in srgb, var(--fcl-accent) 12%, transparent);
-  border: 1px solid color-mix(in srgb, var(--fcl-accent) 30%, transparent);
-  white-space: nowrap;
-}
 
 .fcl-download-controls {
   display: grid;
@@ -1701,10 +1611,6 @@ body {
     display: none;
   }
 
-  .fcl-hero__badge {
-    right: 0.5rem;
-    bottom: -1rem;
-  }
 
   .fcl-section {
     padding: 3.2rem 0;
