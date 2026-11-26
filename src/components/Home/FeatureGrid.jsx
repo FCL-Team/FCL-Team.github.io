@@ -1,16 +1,24 @@
 import React from 'react';
 import Translate from '@docusaurus/Translate';
+import {motion} from 'motion/react';
 import {Icon} from '@site/src/components/Icons';
+import Reveal from '@site/src/components/motion/Reveal';
 
-function Feature({icon, title, desc}) {
+function Feature({icon, title, desc, index = 0}) {
   return (
-    <article className="fcl-card fcl-feature">
+    <motion.article
+      className="fcl-card fcl-feature"
+      initial={{opacity: 0, y: 24}}
+      whileInView={{opacity: 1, y: 0}}
+      viewport={{once: true, amount: 0.2}}
+      transition={{duration: 0.5, delay: index * 0.05, ease: [0.22, 1, 0.36, 1]}}
+      whileHover={{y: -5}}>
       <div className="fcl-card__icon">
         <Icon name={icon} size={22} />
       </div>
       <h3 className="fcl-card__title">{title}</h3>
       <p className="fcl-card__desc">{desc}</p>
-    </article>
+    </motion.article>
   );
 }
 
@@ -18,18 +26,19 @@ export default function FeatureGrid() {
   return (
     <section className="fcl-section fcl-section--alt" id="features">
       <div className="fcl-container">
-        <div className="fcl-section-head">
+        <Reveal className="fcl-section-head">
           <h2 className="fcl-section-title">
             <Translate id="home.features.title" description="Features section title">游玩所需，一应俱全</Translate>
           </h2>
           <p className="fcl-section-sub">
             <Translate id="home.features.sub" description="Features section subtitle">为触屏打造的全功能启动器——也为喜欢折腾的你准备。</Translate>
           </p>
-        </div>
+        </Reveal>
 
         <div className="fcl-grid">
           <Feature
             icon="layers"
+            index={0}
             title={
               <Translate id="home.features.versions.title" description="Feature title">所有 Minecraft 版本</Translate>
             }
@@ -39,6 +48,7 @@ export default function FeatureGrid() {
           />
           <Feature
             icon="box"
+            index={1}
             title={
               <Translate id="home.features.loaders.title" description="Feature title">支持所有模组加载器</Translate>
             }
@@ -48,6 +58,7 @@ export default function FeatureGrid() {
           />
           <Feature
             icon="cpu"
+            index={2}
             title={
               <Translate id="home.features.java.title" description="Feature title">内置 Java 运行时</Translate>
             }
@@ -57,6 +68,7 @@ export default function FeatureGrid() {
           />
           <Feature
             icon="gamepad"
+            index={3}
             title={
               <Translate id="home.features.controls.title" description="Feature title">合手的触控操作</Translate>
             }
@@ -66,6 +78,7 @@ export default function FeatureGrid() {
           />
           <Feature
             icon="sparkles"
+            index={4}
             title={
               <Translate id="home.features.shaders.title" description="Feature title">光影与渲染器</Translate>
             }
@@ -75,6 +88,7 @@ export default function FeatureGrid() {
           />
           <Feature
             icon="folder"
+            index={5}
             title={
               <Translate id="home.features.resources.title" description="Feature title">一站式管理</Translate>
             }
@@ -84,6 +98,7 @@ export default function FeatureGrid() {
           />
           <Feature
             icon="palette"
+            index={6}
             title={
               <Translate id="home.features.themes.title" description="Feature title">打造你的专属风格</Translate>
             }
@@ -93,6 +108,7 @@ export default function FeatureGrid() {
           />
           <Feature
             icon="code"
+            index={7}
             title={
               <Translate id="home.features.opensource.title" description="Feature title">免费且开源</Translate>
             }

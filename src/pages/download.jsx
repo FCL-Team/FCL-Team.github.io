@@ -8,6 +8,7 @@ import DownloadPanel from '@site/src/components/Download/DownloadPanel';
 import ReleaseNotes from '@site/src/components/Download/ReleaseNotes';
 import ReleaseHistory from '@site/src/components/Download/ReleaseHistory';
 import {Icon} from '@site/src/components/Icons';
+import Reveal from '@site/src/components/motion/Reveal';
 import releases from '@site/src/data/releases.json';
 import {LINKS} from '@site/src/constants';
 
@@ -50,7 +51,7 @@ export default function Download() {
 
       <section className="fcl-section">
         <div className="fcl-container">
-          <div className="fcl-about-grid">
+          <Reveal className="fcl-about-grid">
             <div>
               <div className="fcl-section-head fcl-section-head--left">
                 <h2 className="fcl-section-title">
@@ -103,7 +104,7 @@ export default function Download() {
                 </a>
               </div>
             </div>
-          </div>
+          </Reveal>
 
           <p className="fcl-muted" style={{textAlign: 'center', marginTop: '3rem'}}>
             <Translate id="download.disclaimer" description="Trademark disclaimer">Fold Craft Launcher 与 Mojang Studios 或 Microsoft 没有隶属关系。Minecraft 是 Mojang Synergies AB 的商标。</Translate>

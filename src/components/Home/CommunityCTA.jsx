@@ -3,12 +3,13 @@ import Link from '@docusaurus/Link';
 import Translate from '@docusaurus/Translate';
 import {Icon, BrandDiscord, BrandGithub} from '@site/src/components/Icons';
 import {LINKS} from '@site/src/constants';
+import Reveal from '@site/src/components/motion/Reveal';
 
 export default function CommunityCTA() {
   return (
     <section className="fcl-section">
       <div className="fcl-container">
-        <div className="fcl-cta">
+        <Reveal className="fcl-cta">
           <div className="fcl-cta__inner">
             <div className="fcl-cta__text">
               <h2 className="fcl-cta__title">
@@ -55,7 +56,7 @@ export default function CommunityCTA() {
               <Icon name="external" size={15} />
             </a>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

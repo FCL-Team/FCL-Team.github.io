@@ -1,4 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
+import {AnimatePresence, motion} from 'motion/react';
 import {Icon} from '@site/src/components/Icons';
 
 /**
@@ -50,8 +51,16 @@ export default function Dropdown({label, value, options, onChange, icon = 'cpu'}
         <Icon name="chevronDown" size={16} className="fcl-select__chevron" />
       </button>
 
-      {open ? (
-        <ul className="fcl-select__menu" role="listbox">
+      <AnimatePresence>
+        {open ? (
+          <motion.ul
+            key="menu"
+            className="fcl-select__menu"
+            role="listbox"
+            initial={{opacity: 0, y: -6, scale: 0.98}}
+            animate={{opacity: 1, y: 0, scale: 1}}
+            exit={{opacity: 0, y: -6, scale: 0.98}}
+            transition={{duration: 0.16, ease: 'easeOut'}}>
           {options.map((option) => {
             const selected = option.id === value;
             return (
@@ -81,8 +90,9 @@ export default function Dropdown({label, value, options, onChange, icon = 'cpu'}
               </li>
             );
           })}
-        </ul>
-      ) : null}
+          </motion.ul>
+        ) : null}
+      </AnimatePresence>
     </div>
   );
 }

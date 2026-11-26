@@ -7,6 +7,7 @@ import {LINKS} from '@site/src/constants';
 import {formatCompact} from '@site/src/utils/format';
 import releases from '@site/src/data/releases.json';
 import contributors from '@site/src/data/contributors.json';
+import Reveal from '@site/src/components/motion/Reveal';
 
 function Stat({value, label}) {
   return (
@@ -61,7 +62,7 @@ export default function About() {
 
       <section className="fcl-section" style={{paddingTop: '0.5rem'}}>
         <div className="fcl-container">
-          <div className="fcl-about-grid">
+          <Reveal className="fcl-about-grid">
             <div className="fcl-panel">
               <img className="fcl-about-icon" src="/img/logo.png" alt="" width={84} height={84} />
               <p className="fcl-about-lead">
@@ -128,7 +129,7 @@ export default function About() {
                 <Translate id="about.stats.note" description="Stats footnote">数据统计自公开的 GitHub 仓库与 Release 资源。</Translate>
               </p>
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
@@ -142,7 +143,7 @@ export default function About() {
               <Translate id="about.foundation.sub" description="Foundations subtitle">没有下面这些项目，就没有 FCL。衷心感谢它们的维护者与贡献者。</Translate>
             </p>
           </div>
-          <div className="fcl-grid fcl-grid--4">
+          <Reveal className="fcl-grid fcl-grid--4">
             <FoundationCard
               icon="box"
               title="HMCL"
@@ -177,7 +178,7 @@ export default function About() {
               }
               href={LINKS.terracotta}
             />
-          </div>
+          </Reveal>
         </div>
       </section>
 
@@ -235,7 +236,7 @@ export default function About() {
 
       <section className="fcl-section fcl-section--alt">
         <div className="fcl-container">
-          <div className="fcl-about-grid">
+          <Reveal className="fcl-about-grid">
             <div>
               <div className="fcl-section-head fcl-section-head--left">
                 <h2 className="fcl-section-title">
@@ -260,13 +261,13 @@ export default function About() {
                 <li><a href={LINKS.driverPlugin} target="_blank" rel="noreferrer">FCLDriverPlugin <Icon name="external" size={13} /></a></li>
               </ul>
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
       <section className="fcl-section">
         <div className="fcl-container">
-          <div className="fcl-cta">
+          <Reveal className="fcl-cta">
             <div className="fcl-cta__inner">
               <div>
                 <h2 className="fcl-cta__title">
@@ -291,7 +292,7 @@ export default function About() {
                 </a>
               </div>
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
     </Layout>

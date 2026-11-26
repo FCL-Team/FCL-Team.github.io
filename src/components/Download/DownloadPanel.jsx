@@ -5,6 +5,8 @@ import {Icon} from '@site/src/components/Icons';
 import Dropdown from '@site/src/components/Download/Dropdown';
 import {formatBytes, formatDate} from '@site/src/utils/format';
 import releases from '@site/src/data/releases.json';
+import {motion} from 'motion/react';
+import Reveal from '@site/src/components/motion/Reveal';
 
 const DEVICE_OPTIONS = [
   {
@@ -146,7 +148,7 @@ export default function DownloadPanel() {
   );
 
   return (
-    <div className="fcl-panel fcl-download-main">
+    <Reveal className="fcl-panel fcl-download-main" inView={false} delay={0.05}>
       <div className="fcl-release-head">
         <div>
           <div className="fcl-release-head__version">v{latest.versionName}</div>
@@ -202,7 +204,7 @@ export default function DownloadPanel() {
       </div>
 
       {latest.netdiskUrl ? (
-        <div className="fcl-cloud">
+        <Reveal className="fcl-cloud" delay={0.1}>
           <div className="fcl-cloud__icon">
             <Icon name="cloud" size={20} />
           </div>
@@ -228,7 +230,7 @@ export default function DownloadPanel() {
               夸克网盘
             </Translate>
           </a>
-        </div>
+        </Reveal>
       ) : null}
 
       {isNetdisk ? (
@@ -251,8 +253,18 @@ export default function DownloadPanel() {
 
       <div className="fcl-assets">
         {filteredAssets.length > 0 ? (
-          filteredAssets.map((asset) => (
-            <div className="fcl-asset" key={asset.arch}>
+          filteredAssets.map((asset, index) => (
+            <motion.div
+              className="fcl-asset"
+              key={asset.arch}
+              initial={{opacity: 0, y: 14}}
+              whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true, amount: 0.2}}
+              transition={{
+                duration: 0.4,
+                delay: index * 0.05,
+                ease: [0.22, 1, 0.36, 1],
+              }}>
               <div className="fcl-asset__icon">
                 <Icon name="monitor" size={18} />
               </div>
@@ -284,7 +296,7 @@ export default function DownloadPanel() {
                   </Translate>
                 )}
               </a>
-            </div>
+            </motion.div>
           ))
         ) : (
           <p className="fcl-assets-empty">
@@ -294,6 +306,6 @@ export default function DownloadPanel() {
           </p>
         )}
       </div>
-    </div>
+    </Reveal>
   );
 }

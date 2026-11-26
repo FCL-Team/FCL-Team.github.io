@@ -370,6 +370,10 @@ body {
   text-decoration: none;
 }
 
+.fcl-btn:active {
+  transform: translateY(0) scale(0.98);
+}
+
 .fcl-btn--primary {
   color: var(--fcl-accent-ink);
   background: var(--fcl-gradient);
@@ -543,6 +547,11 @@ body {
   background: var(--fcl-surface);
   border: 1px solid var(--fcl-border);
   box-shadow: var(--fcl-shadow);
+}
+
+.fcl-hero__float {
+  position: relative;
+  will-change: transform;
 }
 
 .fcl-hero__shot {

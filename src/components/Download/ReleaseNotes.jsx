@@ -5,13 +5,14 @@ import {Icon} from '@site/src/components/Icons';
 import Changelog from '@site/src/components/Download/Changelog';
 import {formatDate} from '@site/src/utils/format';
 import releases from '@site/src/data/releases.json';
+import Reveal from '@site/src/components/motion/Reveal';
 
 export default function ReleaseNotes({changelog}) {
   const {i18n} = useDocusaurusContext();
   const {latest} = releases;
 
   return (
-    <aside className="fcl-panel fcl-notes">
+    <Reveal as="aside" className="fcl-panel fcl-notes" delay={0.12}>
       <h2 className="fcl-panel__title">
         <Icon name="info" size={18} />
         <Translate id="download.notes.title" description="Release notes panel title">
@@ -31,6 +32,6 @@ export default function ReleaseNotes({changelog}) {
         </Translate>
         <Icon name="external" size={14} />
       </a>
-    </aside>
+    </Reveal>
   );
 }

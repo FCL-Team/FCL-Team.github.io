@@ -5,6 +5,7 @@ import Translate, {translate} from '@docusaurus/Translate';
 import PageHero from '@site/src/components/PageHero';
 import {Icon, BrandDiscord, BrandGithub} from '@site/src/components/Icons';
 import {LINKS} from '@site/src/constants';
+import Reveal from '@site/src/components/motion/Reveal';
 
 function LinkCard({icon, title, desc, href, action, external = true}) {
   const actionNode = (
@@ -64,7 +65,7 @@ export default function Community() {
 
       <section className="fcl-section" style={{paddingTop: '0.5rem'}}>
         <div className="fcl-container">
-          <div className="fcl-grid fcl-grid--3">
+          <Reveal className="fcl-grid fcl-grid--3">
             <LinkCard
               icon={<BrandDiscord size={22} />}
               title={
@@ -144,13 +145,13 @@ export default function Community() {
               }
               href={LINKS.afdian}
             />
-          </div>
+          </Reveal>
         </div>
       </section>
 
       <section className="fcl-section fcl-section--alt">
         <div className="fcl-container">
-          <div className="fcl-about-grid">
+          <Reveal className="fcl-about-grid">
             <div>
               <div className="fcl-section-head fcl-section-head--left">
                 <h2 className="fcl-section-title">
@@ -207,7 +208,7 @@ export default function Community() {
                 </a>
               </div>
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
     </Layout>

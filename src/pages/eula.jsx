@@ -3,6 +3,7 @@ import Layout from '@theme/Layout';
 import Translate, {translate} from '@docusaurus/Translate';
 import PageHero from '@site/src/components/PageHero';
 import {LINKS} from '@site/src/constants';
+import Reveal from '@site/src/components/motion/Reveal';
 
 export default function Eula() {
   return (
@@ -28,7 +29,7 @@ export default function Eula() {
         }
       />
 
-      <div className="fcl-legal">
+      <Reveal className="fcl-legal">
         <div className="fcl-legal__card">
           <div className="fcl-legal__meta">
             <span>
@@ -104,7 +105,7 @@ export default function Eula() {
             .
           </p>
         </div>
-      </div>
+      </Reveal>
     </Layout>
   );
 }

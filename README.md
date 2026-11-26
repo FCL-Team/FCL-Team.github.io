@@ -12,6 +12,7 @@ Built with [Docusaurus 3](https://docusaurus.io/).
 - **Simplified Chinese by default, English at `/en/`** — full i18n with a language switcher in the navbar
 - **Local search** — offline search across docs and pages, focused with `Ctrl/⌘ + K`, works in both languages
 - **Game-themed visuals** — fixed cherry-blossom artwork, glass cards and a cyan-blue accent palette
+- **Subtle motion** — scroll reveals, staggered cards and micro-interactions powered by [motion](https://motion.dev/)
 - **Up-to-date screenshots** of the latest launcher interface
 - **Download page** with release assets per architecture, changelog and mirrors
 - **Documentation** for accounts, controller layouts, building and contributing
