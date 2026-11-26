@@ -1,12 +1,13 @@
 import React, {useEffect, useMemo, useState} from 'react';
 import Translate, {translate} from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import {Icon} from '@site/src/components/Icons';
+import {Icon, BrandGithub} from '@site/src/components/Icons';
 import Dropdown from '@site/src/components/Download/Dropdown';
 import {formatBytes, formatDate} from '@site/src/utils/format';
 import releases from '@site/src/data/releases.json';
 import {motion} from 'motion/react';
 import Reveal from '@site/src/components/motion/Reveal';
+import {LINKS} from '@site/src/constants';
 
 const DEVICE_OPTIONS = [
   {
@@ -232,6 +233,37 @@ export default function DownloadPanel() {
           </a>
         </Reveal>
       ) : null}
+
+      <Reveal className="fcl-support" delay={0.12}>
+        <span className="fcl-support__text">
+          <Translate id="download.support.text" description="Support hint under the netdisk card">
+            这是开源项目，点亮星标支持一下吧~
+          </Translate>
+        </span>
+        <div className="fcl-support__links">
+          <a
+            className="fcl-support__link"
+            href={LINKS.github}
+            target="_blank"
+            rel="noreferrer">
+            <BrandGithub size={15} />
+            <Translate id="download.support.github" description="GitHub repository link">
+              GitHub 仓库
+            </Translate>
+            <Icon name="star" size={13} />
+          </a>
+          <a
+            className="fcl-support__link"
+            href={LINKS.afdian}
+            target="_blank"
+            rel="noreferrer">
+            <Icon name="heart" size={15} />
+            <Translate id="download.support.afdian" description="Afdian link">
+              爱发电
+            </Translate>
+          </a>
+        </div>
+      </Reveal>
 
       {isNetdisk ? (
         <p className="fcl-select__hint fcl-select__hint--block">

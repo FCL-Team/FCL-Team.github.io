@@ -1049,5 +1049,17 @@
   "download.notes.viewAll": {
     "message": "View full release notes on GitHub",
     "description": "Download page"
+  },
+  "download.support.text": {
+    "message": "This is an open-source project — a star would really help~",
+    "description": "Download page"
+  },
+  "download.support.github": {
+    "message": "GitHub repository",
+    "description": "Download page"
+  },
+  "download.support.afdian": {
+    "message": "Afdian",
+    "description": "Download page"
   }
 }
