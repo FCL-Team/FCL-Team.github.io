@@ -11,7 +11,7 @@ Built with [Docusaurus 3](https://docusaurus.io/).
 - **Cyan-blue accent palette** — tuned for both dark and light modes
 - **Simplified Chinese by default, English at `/en/`** — full i18n with a language switcher in the navbar
 - **Local search** — offline search across docs and pages, focused with `Ctrl/⌘ + K`, works in both languages
-- **Game-themed visuals** — fixed cherry-blossom artwork, glass cards and a cyan-blue accent palette
+- **Game-themed visuals** — fixed cherry-blossom artwork, glass cards and the Iceberg Dark / Iceberg Light palettes
 - **Subtle motion** — scroll reveals, staggered cards and micro-interactions powered by [motion](https://motion.dev/)
 - **Up-to-date screenshots** of the latest launcher interface
 - **Download page** with release assets per architecture, changelog and mirrors
@@ -124,6 +124,7 @@ errors before merging.
 - Documentation adapted from [FCL-Docs](https://github.com/FCL-Team/FCL-Docs)
 - UI inspiration: [FCLdocs community documentation](https://github.com/FCLdocs-community/FCLdocs)
 - Background artwork: 柠枺 (leemwood), provided by the author
+- Color palette: [Iceberg](https://github.com/cocopon/iceberg.vim) by cocopon (MIT)
 - Icons: hand-written SVG paths, no external icon dependency
 
 ## Troubleshooting

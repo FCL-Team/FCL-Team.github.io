@@ -1,19 +1,20 @@
 /**
  * Fold Craft Launcher website theme.
- * Dark is the default color mode; the light theme is supported as well.
+ * Dark is the default color mode; colors follow the Iceberg Dark / Iceberg Light
+ * palettes by cocopon (MIT).
  */
 
 /* -------------------------------------------------------------------------
  * Design tokens
  * ---------------------------------------------------------------------- */
 :root {
-  --ifm-color-primary: #0891b2;
-  --ifm-color-primary-dark: #07809e;
-  --ifm-color-primary-darker: #07778f;
-  --ifm-color-primary-darkest: #06627a;
-  --ifm-color-primary-light: #09a2c6;
-  --ifm-color-primary-lighter: #0aaacf;
-  --ifm-color-primary-lightest: #1ec3e8;
+  --ifm-color-primary: #2d539e;
+  --ifm-color-primary-dark: #284b8e;
+  --ifm-color-primary-darker: #26468a;
+  --ifm-color-primary-darkest: #1f3971;
+  --ifm-color-primary-light: #325baf;
+  --ifm-color-primary-lighter: #3460b8;
+  --ifm-color-primary-lightest: #4371ce;
 
   --ifm-font-family-base: system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB",
@@ -24,80 +25,80 @@
   --ifm-code-font-size: 92%;
   --ifm-navbar-shadow: none;
 
-  --fcl-accent: #0e7490;
-  --fcl-accent-soft: #0891b2;
-  --fcl-blue: #2563eb;
-  --fcl-indigo: #6366f1;
-  --fcl-accent-ink: #04121d;
+  --fcl-accent: #2d539e;
+  --fcl-accent-soft: #3f83a6;
+  --fcl-blue: #3f83a6;
+  --fcl-indigo: #7759b4;
+  --fcl-accent-ink: #ffffff;
   --fcl-bg-image: url('/img/background/cherry-light.webp');
   --fcl-bg-image-mobile: url('/img/background/cherry-light-960.webp');
-  --fcl-page-overlay: rgba(247, 249, 253, 0.86);
+  --fcl-page-overlay: rgba(232, 233, 236, 0.87);
   --fcl-glass-blur: 14px;
-  --fcl-surface: rgba(255, 255, 255, 0.72);
-  --fcl-surface-2: rgba(244, 247, 252, 0.62);
-  --fcl-border: rgba(15, 23, 42, 0.12);
-  --fcl-text-muted: #52607a;
-  --fcl-shadow: 0 24px 70px rgba(15, 23, 42, 0.14);
-  --fcl-glow-accent: rgba(34, 211, 238, 0.26);
-  --fcl-glow-blue: rgba(59, 130, 246, 0.18);
+  --fcl-surface: rgba(255, 255, 255, 0.76);
+  --fcl-surface-2: rgba(220, 223, 231, 0.55);
+  --fcl-border: rgba(51, 55, 76, 0.14);
+  --fcl-text-muted: #5c6178;
+  --fcl-shadow: 0 24px 70px rgba(51, 55, 76, 0.16);
+  --fcl-glow-accent: rgba(132, 160, 198, 0.28);
+  --fcl-glow-blue: rgba(63, 131, 166, 0.2);
   --fcl-max-width: 1180px;
   --fcl-radius: 20px;
   --fcl-radius-sm: 15px;
-  --fcl-gradient: linear-gradient(135deg, #22d3ee 0%, #38bdf8 52%, #60a5fa 100%);
-  --fcl-gradient-text: linear-gradient(100deg, #0891b2 0%, #2563eb 55%, #6366f1 100%);
+  --fcl-gradient: linear-gradient(135deg, #2d539e 0%, #3b5fae 45%, #7759b4 100%);
+  --fcl-gradient-text: linear-gradient(100deg, #2d539e 0%, #7759b4 55%, #3f83a6 100%);
 
-  --ifm-navbar-background-color: rgba(255, 255, 255, 0.74);
-  --ifm-footer-background-color: rgba(9, 11, 16, 0.92);
+  --ifm-navbar-background-color: rgba(248, 249, 251, 0.8);
+  --ifm-footer-background-color: rgba(30, 33, 50, 0.94);
 
   --search-local-modal-background: rgba(255, 255, 255, 0.96);
-  --search-local-hit-background: rgba(248, 250, 253, 0.92);
-  --search-local-hit-color: #1f2937;
-  --search-local-muted-color: #64748b;
+  --search-local-hit-background: rgba(247, 248, 250, 0.95);
+  --search-local-hit-color: #33374c;
+  --search-local-muted-color: #6b7089;
   --search-local-highlight-color: var(--fcl-accent);
   --search-local-input-active-border-color: var(--fcl-accent);
-  --search-local-modal-shadow: 0 18px 50px rgba(15, 23, 42, 0.2);
+  --search-local-modal-shadow: 0 18px 50px rgba(51, 55, 76, 0.2);
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: #22d3ee;
-  --ifm-color-primary-dark: #0cc9e8;
-  --ifm-color-primary-darker: #0bbfd9;
-  --ifm-color-primary-darkest: #09a7bd;
-  --ifm-color-primary-light: #3fd9f1;
-  --ifm-color-primary-lighter: #4ddcf2;
-  --ifm-color-primary-lightest: #78e6f6;
+  --ifm-color-primary: #84a0c6;
+  --ifm-color-primary-dark: #7293bf;
+  --ifm-color-primary-darker: #6a8cbb;
+  --ifm-color-primary-darkest: #5579a9;
+  --ifm-color-primary-light: #96aecd;
+  --ifm-color-primary-lighter: #9eb5d2;
+  --ifm-color-primary-lightest: #b4c5db;
 
-  --ifm-background-color: #0a0c12;
-  --ifm-background-surface-color: #10131c;
-  --ifm-navbar-background-color: rgba(10, 12, 18, 0.76);
-  --ifm-footer-background-color: rgba(7, 9, 14, 0.9);
-  --ifm-heading-color: #f4f6ff;
-  --ifm-font-color-base: #d5daea;
-  --ifm-toc-border-color: rgba(148, 163, 184, 0.15);
+  --ifm-background-color: #161821;
+  --ifm-background-surface-color: #1e2132;
+  --ifm-navbar-background-color: rgba(22, 24, 33, 0.8);
+  --ifm-footer-background-color: rgba(16, 18, 26, 0.92);
+  --ifm-heading-color: #d2d4de;
+  --ifm-font-color-base: #c6c8d1;
+  --ifm-toc-border-color: rgba(198, 200, 209, 0.16);
 
-  --fcl-accent: #22d3ee;
-  --fcl-accent-soft: #67e8f9;
-  --fcl-blue: #60a5fa;
-  --fcl-indigo: #818cf8;
-  --fcl-accent-ink: #04121d;
+  --fcl-accent: #84a0c6;
+  --fcl-accent-soft: #91acd1;
+  --fcl-blue: #89b8c2;
+  --fcl-indigo: #a093c7;
+  --fcl-accent-ink: #161821;
   --fcl-bg-image: url('/img/background/cherry-dark.webp');
   --fcl-bg-image-mobile: url('/img/background/cherry-dark-960.webp');
-  --fcl-page-overlay: rgba(10, 12, 18, 0.82);
-  --fcl-surface: rgba(18, 22, 32, 0.72);
-  --fcl-surface-2: rgba(23, 28, 41, 0.6);
-  --fcl-border: rgba(148, 163, 184, 0.18);
-  --fcl-text-muted: #98a2ba;
-  --fcl-shadow: 0 30px 90px rgba(0, 0, 0, 0.55);
-  --fcl-glow-accent: rgba(34, 211, 238, 0.2);
-  --fcl-glow-blue: rgba(59, 130, 246, 0.16);
-  --fcl-gradient: linear-gradient(135deg, #22d3ee 0%, #38bdf8 52%, #60a5fa 100%);
-  --fcl-gradient-text: linear-gradient(100deg, #22d3ee 0%, #60a5fa 55%, #818cf8 100%);
+  --fcl-page-overlay: rgba(22, 24, 33, 0.84);
+  --fcl-surface: rgba(30, 33, 50, 0.74);
+  --fcl-surface-2: rgba(38, 42, 62, 0.6);
+  --fcl-border: rgba(198, 200, 209, 0.16);
+  --fcl-text-muted: #8389a3;
+  --fcl-shadow: 0 30px 90px rgba(5, 6, 10, 0.6);
+  --fcl-glow-accent: rgba(132, 160, 198, 0.22);
+  --fcl-glow-blue: rgba(137, 184, 194, 0.18);
+  --fcl-gradient: linear-gradient(135deg, #91acd1 0%, #84a0c6 48%, #a093c7 100%);
+  --fcl-gradient-text: linear-gradient(100deg, #84a0c6 0%, #a093c7 55%, #89b8c2 100%);
 
-  --search-local-modal-background: rgba(14, 18, 27, 0.96);
-  --search-local-hit-background: rgba(26, 31, 44, 0.86);
-  --search-local-hit-color: #e6eaf5;
-  --search-local-muted-color: #94a3b8;
-  --search-local-modal-shadow: 0 18px 50px rgba(0, 0, 0, 0.55);
+  --search-local-modal-background: rgba(30, 33, 50, 0.96);
+  --search-local-hit-background: rgba(40, 44, 64, 0.9);
+  --search-local-hit-color: #c6c8d1;
+  --search-local-muted-color: #8389a3;
+  --search-local-modal-shadow: 0 18px 50px rgba(0, 0, 0, 0.6);
 }
 
 /* -------------------------------------------------------------------------
@@ -131,7 +132,7 @@ body {
   background: radial-gradient(
     ellipse 120% 80% at 50% 0%,
     transparent 40%,
-    rgba(2, 4, 8, 0.28) 100%
+    rgba(10, 11, 17, 0.32) 100%
   );
 }
 
@@ -377,12 +378,12 @@ body {
 .fcl-btn--primary {
   color: var(--fcl-accent-ink);
   background: var(--fcl-gradient);
-  box-shadow: 0 14px 34px -14px rgba(34, 211, 238, 0.55);
+  box-shadow: 0 14px 34px -14px rgba(132, 160, 198, 0.5);
 }
 
 .fcl-btn--primary:hover {
   color: var(--fcl-accent-ink);
-  box-shadow: 0 18px 42px -14px rgba(34, 211, 238, 0.8);
+  box-shadow: 0 18px 42px -14px rgba(160, 147, 199, 0.62);
 }
 
 .fcl-btn--ghost {
