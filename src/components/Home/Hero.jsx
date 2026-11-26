@@ -25,7 +25,7 @@ export default function Hero() {
       <div className="fcl-container fcl-hero__inner">
         <div className="fcl-hero__content">
           <Reveal as="h1" className="fcl-hero__title" inView={false} duration={0.6}>
-            Fold Craft <span className="fcl-hero__gradient">Launcher</span>
+            Fold Craft <span className="fcl-hero__accent">Launcher</span>
           </Reveal>
 
           <Reveal as="p" className="fcl-hero__tagline" inView={false} delay={0.08}>
