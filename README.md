@@ -121,8 +121,8 @@ errors before merging.
 
 - Screenshots and project content: [FCL-Team](https://github.com/FCL-Team)
 - Documentation adapted from [FCL-Docs](https://github.com/FCL-Team/FCL-Docs)
-- UI inspiration and background artwork: [FCLdocs community documentation](https://github.com/FCLdocs-community/FCLdocs)
-  (artwork licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/))
+- UI inspiration: [FCLdocs community documentation](https://github.com/FCLdocs-community/FCLdocs)
+- Background artwork: 柠枺 (leemwood), provided by the author
 - Icons: hand-written SVG paths, no external icon dependency
 
 ## Troubleshooting

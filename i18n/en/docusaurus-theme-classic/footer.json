@@ -60,7 +60,7 @@
     "description": "The label of footer link with label=赞助 linking to https://afdian.com/@tungs"
   },
   "copyright": {
-    "message": "Copyright © 2026 FCL-Team · Fold Craft Launcher is free software under the GPL-3.0 license. · Background artwork from the FCLdocs community docs (CC-BY-SA-4.0).",
+    "message": "Copyright © 2026 FCL-Team · Fold Craft Launcher is free software under the GPL-3.0 license. · Background artwork: 柠枺",
     "description": "The footer copyright"
   },
   "logo.alt": {

@@ -186,6 +186,23 @@ body {
  * ---------------------------------------------------------------------- */
 .navbar {
   border-bottom: 1px solid var(--fcl-border);
+  background: transparent;
+}
+
+.navbar-sidebar {
+  background-color: var(--ifm-background-color);
+}
+
+/* Glass effect on a pseudo-element: putting backdrop-filter on .navbar itself
+   would turn it into the containing block of the fixed mobile sidebar and
+   collapse the mobile menu to the navbar height. */
+.navbar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: var(--ifm-navbar-background-color);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
 }

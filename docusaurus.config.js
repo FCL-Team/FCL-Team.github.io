@@ -186,7 +186,7 @@ const config = {
             ],
           },
         ],
-        copyright: `版权所有 © ${new Date().getFullYear()} FCL-Team · Fold Craft Launcher 是基于 GPL-3.0 许可证的自由软件。· 背景图来自 FCLdocs 社区文档（CC-BY-SA-4.0）`,
+        copyright: `版权所有 © ${new Date().getFullYear()} FCL-Team · Fold Craft Launcher 是基于 GPL-3.0 许可证的自由软件。· 背景图：柠枺`,
       },
       prism: {
         theme: prismThemes.github,
