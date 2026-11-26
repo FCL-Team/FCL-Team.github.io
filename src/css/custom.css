@@ -1320,11 +1320,6 @@ body {
   color: var(--fcl-text-muted);
 }
 
-.fcl-req-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.1rem;
-}
 
 .fcl-ol {
   counter-reset: item;

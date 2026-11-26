@@ -315,38 +315,6 @@
     "message": "What's new",
     "description": "Changelog panel title"
   },
-  "download.req.eyebrow": {
-    "message": "Requirements",
-    "description": "Requirements eyebrow"
-  },
-  "download.req.title": {
-    "message": "Before you install",
-    "description": "Requirements title"
-  },
-  "download.req.android.title": {
-    "message": "Android 8.0 or newer",
-    "description": "Requirement title"
-  },
-  "download.req.android.desc": {
-    "message": "FCL targets Android 8.0 (API 26) and above. A 64-bit device is recommended for the best experience.",
-    "description": "Requirement description"
-  },
-  "download.req.storage.title": {
-    "message": "Enough free storage",
-    "description": "Requirement title"
-  },
-  "download.req.storage.desc": {
-    "message": "The APK is 161–323 MB depending on the architecture. Leave extra space for game files, mods and resources.",
-    "description": "Requirement description"
-  },
-  "download.req.arch.title": {
-    "message": "Pick the right build",
-    "description": "Requirement title"
-  },
-  "download.req.arch.desc": {
-    "message": "Use arm64-v8a for most modern phones. The universal package runs on every supported architecture.",
-    "description": "Requirement description"
-  },
   "download.install.eyebrow": {
     "message": "Installation",
     "description": "Install eyebrow"

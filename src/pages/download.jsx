@@ -11,18 +11,6 @@ import {Icon} from '@site/src/components/Icons';
 import releases from '@site/src/data/releases.json';
 import {LINKS} from '@site/src/constants';
 
-function Requirement({icon, title, desc}) {
-  return (
-    <article className="fcl-card">
-      <div className="fcl-card__icon">
-        <Icon name={icon} size={22} />
-      </div>
-      <h3 className="fcl-card__title">{title}</h3>
-      <p className="fcl-card__desc">{desc}</p>
-    </article>
-  );
-}
-
 export default function Download() {
   const {i18n} = useDocusaurusContext();
   const {latest} = releases;
@@ -73,48 +61,6 @@ export default function Download() {
           <div className="fcl-download">
             <DownloadPanel />
             <ReleaseNotes changelog={changelog} />
-          </div>
-        </div>
-      </section>
-
-      <section className="fcl-section fcl-section--alt">
-        <div className="fcl-container">
-          <div className="fcl-section-head">
-            <span className="fcl-eyebrow">
-              <Translate id="download.req.eyebrow" description="Requirements eyebrow">系统要求</Translate>
-            </span>
-            <h2 className="fcl-section-title">
-              <Translate id="download.req.title" description="Requirements title">安装之前</Translate>
-            </h2>
-          </div>
-          <div className="fcl-req-grid">
-            <Requirement
-              icon="monitor"
-              title={
-                <Translate id="download.req.android.title" description="Requirement title">Android 8.0 或更高版本</Translate>
-              }
-              desc={
-                <Translate id="download.req.android.desc" description="Requirement description">FCL 面向 Android 8.0（API 26）及以上系统。推荐使用 64 位设备以获得最佳体验。</Translate>
-              }
-            />
-            <Requirement
-              icon="folder"
-              title={
-                <Translate id="download.req.storage.title" description="Requirement title">充足的存储空间</Translate>
-              }
-              desc={
-                <Translate id="download.req.storage.desc" description="Requirement description">根据架构不同，APK 大小在 161–323 MB 之间。请为游戏文件、模组和资源预留额外空间。</Translate>
-              }
-            />
-            <Requirement
-              icon="cpu"
-              title={
-                <Translate id="download.req.arch.title" description="Requirement title">选对安装包</Translate>
-              }
-              desc={
-                <Translate id="download.req.arch.desc" description="Requirement description">大多数现代手机请选择 arm64-v8a；通用包可在所有受支持的架构上运行。</Translate>
-              }
-            />
           </div>
         </div>
       </section>
