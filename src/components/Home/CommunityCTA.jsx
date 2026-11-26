@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 import Translate from '@docusaurus/Translate';
-import {Icon, BrandDiscord, BrandGithub} from '@site/src/components/Icons';
+import {Icon, BrandDiscord, BrandGithub, BrandQQ} from '@site/src/components/Icons';
 import {LINKS} from '@site/src/constants';
 import Reveal from '@site/src/components/motion/Reveal';
 
@@ -33,7 +33,7 @@ export default function CommunityCTA() {
                 href={LINKS.qq}
                 target="_blank"
                 rel="noreferrer">
-                <Icon name="chat" size={18} />
+                <BrandQQ size={18} />
                 <Translate id="home.community.qq" description="QQ group button">QQ 群</Translate>
               </a>
               <a

@@ -3,7 +3,7 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import Translate, {translate} from '@docusaurus/Translate';
 import PageHero from '@site/src/components/PageHero';
-import {Icon, BrandDiscord, BrandGithub} from '@site/src/components/Icons';
+import {Icon, BrandDiscord, BrandGithub, BrandQQ, BrandWeblate, BrandAfdian} from '@site/src/components/Icons';
 import {LINKS} from '@site/src/constants';
 import Reveal from '@site/src/components/motion/Reveal';
 
@@ -80,7 +80,7 @@ export default function Community() {
               href={LINKS.discord}
             />
             <LinkCard
-              icon={<Icon name="chat" size={22} />}
+              icon={<BrandQQ size={22} />}
               title={
                 <Translate id="community.qq.title" description="Community card title">QQ 群</Translate>
               }
@@ -106,7 +106,7 @@ export default function Community() {
               href={LINKS.github}
             />
             <LinkCard
-              icon={<Icon name="globe" size={22} />}
+              icon={<BrandWeblate size={22} />}
               title={
                 <Translate id="community.weblate.title" description="Community card title">翻译</Translate>
               }
@@ -133,7 +133,7 @@ export default function Community() {
               external={false}
             />
             <LinkCard
-              icon={<Icon name="heart" size={22} />}
+              icon={<BrandAfdian size={22} />}
               title={
                 <Translate id="community.sponsor.title" description="Community card title">赞助</Translate>
               }
